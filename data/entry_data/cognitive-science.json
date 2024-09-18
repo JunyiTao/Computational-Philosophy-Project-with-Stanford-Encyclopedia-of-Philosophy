@@ -1,0 +1,362 @@
+{
+    "url": "cognitive-science",
+    "title": "Cognitive Science",
+    "authorship": {
+        "year": "Copyright \u00a9 2023",
+        "author_text": "Paul Thagard\n<pthagard@uwaterloo.ca>",
+        "author_links": [
+            {
+                "http://paulthagard.com/": "Paul Thagard"
+            },
+            {
+                "mailto:pthagard%40uwaterloo%2eca": "pthagard@uwaterloo.ca"
+            }
+        ],
+        "raw_html": "<div id=\"article-copyright\">\n<p>\n<a href=\"../../info.html#c\">Copyright \u00a9 2023</a> by\n\n<br/>\n<a href=\"http://paulthagard.com/\" target=\"other\">Paul Thagard</a>\n&lt;<a href=\"mailto:pthagard%40uwaterloo%2eca\"><em>pthagard<abbr title=\" at \">@</abbr>uwaterloo<abbr title=\" dot \">.</abbr>ca</em></a>&gt;\n    </p>\n</div>"
+    },
+    "pubinfo": [
+        "First published Mon Sep 23, 1996",
+        "substantive revision Tue Jan 31, 2023"
+    ],
+    "preamble": "\n\nCognitive science is the interdisciplinary study of mind and\nintelligence, embracing philosophy, psychology, artificial\nintelligence, neuroscience, linguistics, and anthropology. Its\nintellectual origins are in the mid-1950s when researchers in several\nfields began to develop theories of mind based on complex\nrepresentations and computational procedures. Its organizational\norigins are in the mid-1970s when the Cognitive Science Society was\nformed and the journal Cognitive Science began. Since then,\nmore than one hundred universities in North America, Europe, Asia, and\nAustralia have established cognitive science programs, and many others\nhave instituted courses in cognitive science.\n",
+    "toc": [
+        {
+            "#His": "1. History"
+        },
+        {
+            "#Met": "2. Methods"
+        },
+        {
+            "#RepCom": "3. Representation and Computation"
+        },
+        {
+            "#TheApp": "4. Theoretical Approaches"
+        },
+        {
+            "#ForLog": "4.1 Formal logic"
+        },
+        {
+            "#Rul": "4.2 Rules"
+        },
+        {
+            "#Concepts": "4.3 Concepts"
+        },
+        {
+            "#Ana": "4.4 Analogies"
+        },
+        {
+            "#Ima": "4.5 Images"
+        },
+        {
+            "#Con": "4.6 Connectionism"
+        },
+        {
+            "#TheNeu": "4.7 Theoretical neuroscience"
+        },
+        {
+            "#Bayes": "4.8 Bayesian"
+        },
+        {
+            "#Deep": "4.9 Deep learning"
+        },
+        {
+            "#Predictive": "4.10 Predictive processing and active inference"
+        },
+        {
+            "#PhiRel": "5. Philosophical Relevance"
+        },
+        {
+            "#PhiApp": "5.1 Philosophical Applications"
+        },
+        {
+            "#CriCogSci": "5.2 Critique of Cognitive Science"
+        },
+        {
+            "#CogSci": "5.3 Philosophy of Cognitive Science"
+        },
+        {
+            "#Bib": "Bibliography"
+        },
+        {
+            "#Aca": "Academic Tools"
+        },
+        {
+            "#Oth": "Other Internet Resources"
+        },
+        {
+            "#Rel": "Related Entries"
+        }
+    ],
+    "main_text": "\n1. History\n\nAttempts to understand the mind and its operation go back at least to\nthe Ancient Greeks, when philosophers such as Plato and Aristotle\ntried to explain the nature of human knowledge. The study of mind\nremained the province of philosophy until the nineteenth century, when\nexperimental psychology developed. Wilhelm Wundt and his students\ninitiated laboratory methods for studying mental operations more\nsystematically. Within a few decades, however, experimental psychology\nbecame dominated by\n behaviorism,\n a view that virtually denied the existence of mind. According to\nbehaviorists such as J. B. Watson, psychology should restrict itself\nto examining the relation between observable stimuli and observable\nbehavioral responses. Talk of consciousness and mental representations\nwas banished from respectable scientific discussion. Especially in\nNorth America, behaviorism dominated the psychological scene through\nthe 1950s.\n\nAround 1956, the intellectual landscape began to change dramatically.\nGeorge Miller summarized numerous studies which showed that the\ncapacity of human thinking is limited, with short-term memory, for\nexample, limited to around seven items. He proposed that memory\nlimitations can be overcome by recoding information into chunks,\nmental representations that require mental procedures for encoding and\ndecoding the information. At this time, primitive computers had been\naround for only a few years, but pioneers such as John McCarthy,\nMarvin Minsky, Allen Newell, and Herbert Simon were founding the field\nof\n artificial intelligence.\n In addition, Noam Chomsky rejected behaviorist assumptions about\nlanguage as a learned habit and proposed instead to explain language\ncomprehension in terms of mental grammars consisting of rules. The six\nthinkers mentioned in this paragraph can be viewed as the founders of\ncognitive science.\n2. Methods\n\nCognitive science has unifying theoretical ideas, but we have to\nappreciate the diversity of outlooks and methods that researchers in\ndifferent fields bring to the study of mind and intelligence. Although\ncognitive psychologists today often engage in theorizing and\ncomputational modeling, their primary method is experimentation with\nhuman participants. People, often undergraduates satisfying course\nrequirements, are brought into the laboratory so that different kinds\nof thinking can be studied under controlled conditions. For example,\npsychologists have experimentally examined the kinds of mistakes\npeople make in deductive reasoning, the ways that people form and\napply concepts, the speed of people thinking with mental images, and\nthe performance of people solving problems using analogies. Our\nconclusions about how the mind works must be based on more than\n\u201ccommon sense\u201d and introspection, since these can give a\nmisleading picture of mental operations, many of which are not\nconsciously accessible. Increasingly, psychologists draw their\nexperimental participants from Amazon\u2019s Mechanical Turk and from\nculturally diverse sources. Psychological experiments that carefully\napproach mental operations from diverse directions are therefore\ncrucial for cognitive science to be scientific. Experimentation is\nalso a methodology employed by\n experimental philosophy.\n\n\nAlthough theory without experiment is empty, experiment without theory\nis blind. To address the crucial questions about the nature of mind,\nthe psychological experiments need to be interpretable within a\ntheoretical framework that postulates mental representations and\nprocedures. One of the best ways of developing theoretical frameworks\nis by forming and testing computational models intended to be\nanalogous to mental operations. To complement psychological\nexperiments on deductive reasoning, concept formation, mental imagery,\nand analogical problem solving, researchers have developed\ncomputational models that simulate aspects of human performance.\nDesigning, building, and experimenting with computational models is\nthe central method of artificial intelligence (AI), the branch of\ncomputer science concerned with intelligent systems. Ideally in\ncognitive science, computational models and psychological\nexperimentation go hand in hand, but much important work in AI has\nexamined the power of different approaches to knowledge representation\nin relative isolation from experimental psychology.\n\nWhile some linguists do psychological experiments or develop\ncomputational models, most currently use different methods. For\nlinguists in the Chomskian tradition, the main theoretical task is to\nidentify grammatical principles that provide the basic structure of\nhuman languages. Identification takes place by noticing subtle\ndifferences between grammatical and ungrammatical utterances. In\nEnglish, for example, the sentences \u201cShe hit the ball\u201d and\n\u201cWhat do you like?\u201d are grammatical, but \u201cShe the\nhit ball\u201d and \u201cWhat does you like?\u201d are not. A\ngrammar of English will explain why the former are acceptable but not\nthe latter. An alternative approach, cognitive linguistics, puts less\nemphasis on syntax and more on semantics and concepts.\n\nLike cognitive psychologists, neuroscientists often perform controlled\nexperiments, but their observations are very different, since\nneuroscientists are concerned directly with the nature of the brain.\nWith nonhuman subjects, researchers can insert electrodes and record\nthe firing of individual neurons. With humans for whom this technique\nwould be too invasive, it is now common to use magnetic and positron\nscanning devices to observe what is happening in different parts of\nthe brain while people are doing various mental tasks. For example,\nbrain scans have identified the regions of the brain involved in\nmental imagery and word interpretation. Additional evidence about\nbrain functioning is gathered by observing the performance of people\nwhose brains have been damaged in identifiable ways. A stroke, for\nexample, in a part of the brain dedicated to language can produce\ndeficits such as the inability to utter sentences. Like cognitive\npsychology, neuroscience is often theoretical as well as experimental,\nand theory development is frequently aided by developing computational\nmodels of the behavior of groups of neurons.\n\nCognitive anthropology expands the examination of human thinking to\nconsider how thought works in different cultural settings. The study\nof mind should obviously not be restricted to how English speakers\nthink but should consider possible differences in modes of thinking\nacross cultures. Cognitive science is becoming increasingly aware of\nthe need to view the operations of mind in particular physical and\nsocial environments. For cultural anthropologists, the main method is\nethnography, which requires living and interacting with members of a\nculture to a sufficient extent that their social and cognitive systems\nbecome apparent. Cognitive anthropologists have investigated, for\nexample, the similarities and differences across cultures in words for\ncolors.\n\nTraditionally, philosophers do not perform systematic empirical\nobservations or construct computational models, although there has\nbeen a rise in work in experimental philosophy. But philosophy remains\nimportant to cognitive science because it deals with fundamental\nissues that underlie the experimental and computational approach to\nmind. Abstract questions such as the nature of representation and\ncomputation need not be addressed in the everyday practice of\npsychology or artificial intelligence, but they inevitably arise when\nresearchers think deeply about what they are doing. Philosophy also\ndeals with general questions such as the relation of mind and body and\nwith methodological questions such as the nature of explanations found\nin cognitive science. In addition, philosophy concerns itself with\nnormative questions about how people should think as well as with\ndescriptive ones about how they do. Besides the theoretical goal of\nunderstanding human thinking, cognitive science can have the practical\ngoal of improving it, which requires normative reflection on what we\nwant thinking to be. Philosophy of mind does not have a distinct\nmethod, but should share with the best theoretical work in other\nfields a concern with empirical results.\n\nIn its weakest form, cognitive science is just the sum of the fields\nmentioned: psychology, artificial intelligence, linguistics,\nneuroscience, anthropology, and philosophy. Interdisciplinary work\nbecomes much more interesting when there is theoretical and\nexperimental convergence on conclusions about the nature of mind. For\nexample, psychology and artificial intelligence can be combined\nthrough computational models of how people behave in experiments. The\nbest way to grasp the complexity of human thinking is to use multiple\nmethods, especially psychological and neurological experiments and\ncomputational models. Theoretically, the most fertile approach has\nbeen to understand the mind in terms of representation and\ncomputation.\n3. Representation and Computation\n\nThe central hypothesis of cognitive science is that thinking can best\nbe understood in terms of representational structures in the mind and\ncomputational procedures that operate on those structures. While there\nis much disagreement about the nature of the representations and\ncomputations that constitute thinking, the central hypothesis is\ngeneral enough to encompass the current range of thinking in cognitive\nscience, including\n connectionist\n theories which model thinking using artificial neural networks.\n\nMost work in cognitive science assumes that the mind has\n mental representations\n analogous to computer data structures, and computational procedures\nsimilar to computational algorithms. Cognitive theorists have proposed\nthat the mind contains such mental representations as logical\npropositions, rules, concepts, images, and analogies, and that it uses\nmental procedures such as deduction, search, matching, rotating, and\nretrieval. The dominant mind-computer analogy in cognitive science has\ntaken on a novel twist from the use of another analog, the brain.\n\nConnectionists have proposed novel ideas about representation and\ncomputation that use neurons and their connections as inspirations for\ndata structures, and neuron firing and spreading activation as\ninspirations for algorithms. Cognitive science then works with a\ncomplex 3-way analogy among the mind, the brain, and computers. Mind,\nbrain, and computation can each be used to suggest new ideas about the\nothers. There is no single computational model of mind, since\ndifferent kinds of computers and programming approaches suggest\ndifferent ways in which the mind might work. The computers that most\nof us work with today are serial processors, performing one\ninstruction at a time, but the brain and some recently developed\ncomputers are parallel processors, capable of doing many operations at\nonce.\n\nA major trend in current cognitive science is the integration of\nneuroscience with many areas of psychology, including cognitive,\nsocial, developmental, and clinical. This integration is partly\nexperimental, resulting from an explosion of new instruments for\nstudying the brain, such as functional magnetic resonance imaging,\ntranscranial magnetic stimulation, and optogenetics. The integration\nis also theoretical, because of advances in understanding how large\npopulations of neurons can perform tasks usually explained with\ncognitive theories of rules and concepts.\n4. Theoretical Approaches\n\nHere is a schematic summary of current theories about the nature of\nthe representations and computations that explain how the mind\nworks.\n4.1 Formal logic\n\nFormal logic\n provides some powerful tools for looking at the nature of\nrepresentation and computation. Propositional and predicate calculus\nserve to express many complex kinds of knowledge, and many inferences\ncan be understood in terms of logical deduction with inferences rules\nsuch as modus ponens. The explanation schema for the logical approach\nis:\n\nExplanation target:\n\nWhy do people make the inferences they do?\n Explanatory pattern:\n\nPeople have mental representations similar to sentences in\npredicate logic.\nPeople have deductive and inductive procedures that operate on\nthose sentences.\nThe deductive and inductive procedures, applied to the sentences,\nproduce the inferences.\n\n\n\nIt is not certain, however, that logic provides the core ideas about\nrepresentation and computation needed for cognitive science, since\nmore efficient and psychologically natural methods of computation may\nbe needed to explain human thinking. (See the entry on\n logic and artificial intelligence.)\n4.2 Rules\n\nMuch of human knowledge is naturally described in terms of rules of\nthe form IF \u2026 THEN \u2026, and many kinds of thinking such as\nplanning can be modeled by rule-based systems. The explanation schema\nused is:\n\nExplanation target:\n\nWhy do people have a particular kind of intelligent behavior?\n Explanatory pattern:\n\nPeople have mental rules.\nPeople have procedures for using these rules to search a space of\npossible solutions, and procedures for generating new rules.\nProcedures for using and forming rules produce the behavior.\n\n\n\nComputational models based on rules have provided detailed simulations\nof a wide range of psychological experiments, from cryptarithmetic\nproblem solving to skill acquisition to language use. Rule-based\nsystems have also been of practical importance in suggesting how to\nimprove learning and how to develop intelligent machine systems.\n4.3 Concepts\n\nConcepts, which partly correspond to the words in spoken and written\nlanguage, are an important kind of mental representation. There are\ncomputational and psychological reasons for abandoning the classical\nview that concepts have strict definitions. Instead, concepts can be\nviewed as sets of typical features. Concept application is then a\nmatter of getting an approximate match between concepts and the world.\nSchemas and scripts are more complex than concepts that correspond to\nwords, but they are similar in that they consist of bundles of\nfeatures that can be matched and applied to new situations. The\nexplanatory schema used in concept-based systems is:\n\nExplanatory target:\n\nWhy do people have a particular kind of intelligent behavior?\n Explanation pattern:\n\nPeople have a set of concepts, organized via kind and part\nhierarchies and other associations.\nPeople have a set of procedures for concept application, including\nspreading activation, matching, and inheritance.\nThe procedures applied to the concepts produce the behavior.\nConcepts can be translated into rules, but they bundle information\ndifferently than sets of rules, making possible different\ncomputational procedures.\n\n (See the entry on\n concepts.)\n \n4.4 Analogies\n\nAnalogies play an important role in human thinking, in areas as\ndiverse as problem solving, decision making, explanation, and\nlinguistic communication. Computational models simulate how people\nretrieve and map source analogs in order to apply them to target\nsituations. The explanation schema for analogies is:\n\nExplanation target:\n\nWhy do people have a particular kind of intelligent behavior?\n Explanatory pattern:\n\nPeople have verbal and visual representations of situations that\ncan be used as cases or analogs.\nPeople have processes of retrieval, mapping, and adaptation that\noperate on those analogs.\nThe analogical processes, applied to the representations of\nanalogs, produce the behavior.\n\n\n\nThe constraints of similarity, structure, and purpose overcome the\ndifficult problem of how previous experiences can be found and used to\nhelp with new problems. Not all thinking is analogical, and using\ninappropriate analogies can hinder thinking, but analogies can be\neffective in applications such as education and design.\n4.5 Images\n\nVisual and other kinds of images play an important role in human\nthinking. Pictorial representations capture visual and spatial\ninformation in a much more usable form than lengthy verbal\ndescriptions. Computational procedures well suited to visual\nrepresentations include inspecting, finding, zooming, rotating, and\ntransforming. Such operations can be very useful for generating plans\nand explanations in domains to which pictorial representations apply.\nThe explanatory schema for visual representation is:\n\nExplanation target:\n\nWhy do people have a particular kind of intelligent behavior?\n Explanatory pattern:\n\nPeople have visual images of situations.\nPeople have processes such as scanning and rotation that operate\non those images.\nThe processes for constructing and manipulating images produce the\nintelligent behavior.\n\n\n\nImagery can aid learning, and some metaphorical aspects of language\nmay have their roots in imagery. Psychological experiments suggest\nthat visual procedures such as scanning and rotating employ imagery,\nand neurophysiological results confirm a close physical link between\nreasoning with mental imagery and perception. Imagery is not just\nvisual, but can also operate with other sensory experiences such as\nhearing, touch, smell, taste, pain, balance, nausea, fullness, and\nemotion.\n4.6 Connectionism\n\nConnectionist networks consisting of simple nodes and links are very\nuseful for understanding psychological processes that involve parallel\nconstraint satisfaction. Such processes include aspects of vision,\ndecision making, explanation selection, and meaning making in language\ncomprehension. Connectionist models can simulate learning by methods\nthat include Hebbian learning and backpropagation. The explanatory\nschema for the connectionist approach is:\n\nExplanation target:\n\nWhy do people have a particular kind of intelligent behavior?\n Explanatory pattern:\n\nPeople have representations that involve simple processing units\nlinked to each other by excitatory and inhibitory connections.\nPeople have processes that spread activation between the units via\ntheir connections, as well as processes for modifying the\nconnections.\nApplying spreading activation and learning to the units produces\nthe behavior.\n\n\n\nSimulations of various psychological experiments have shown the\npsychological relevance of the connectionist models, which are,\nhowever, only very rough approximations to actual neural networks.\n(For more information, see the entry on\n connectionism.)\n4.7 Theoretical neuroscience\n\nTheoretical neuroscience is the attempt to develop mathematical and\ncomputational theories and models of the structures and processes of\nthe brains of humans and other animals. It differs from connectionism\nin trying to be more biologically accurate by modeling the behavior of\nlarge numbers of realistic neurons organized into functionally\nsignificant brain areas. Computational models of the brain have become\nbiologically richer, both with respect to employing more realistic\nneurons such as ones that spike and have chemical pathways, and with\nrespect to simulating the interactions among different areas of the\nbrain such as the hippocampus and the cortex. These models are not\nstrictly an alternative to computational accounts in terms of logic,\nrules, concepts, analogies, images, and connections, but should mesh\nwith them and show how mental functioning can be performed at the\nneural level. The explanatory schema for theoretical neuroscience\nis:\n\nExplanation target:\n\nHow does the brain carry out functions such as cognitive\ntasks?\n Explanatory pattern:\n\nThe brain has neurons organized by synaptic connections into\npopulations and brain areas.\nThe neural populations have spiking patterns that are transformed\nvia sensory inputs and the spiking patterns of other neural\npopulations.\nInteractions of neural populations carry out functions including\ncognitive tasks.\n\n\n\nFrom the perspective of theoretical neuroscience, mental\nrepresentations are patterns of neural activity, and inference is\ntransformation of such patterns. (See the entries on\n neuroscience\n and the\n neuroscience of consciousness.)\n4.8 Bayesian\n\nBayesian models are prominent in cognitive science, with applications\nto such psychological phenomena as learning, vision, motor control,\nlanguage, and social cognition. They have also had effective\napplications in robotics. The Bayesian approach assumes that cognition\nis approximately optimal in accord with probability theory, especially\nBayes\u2019 theorem, which says that the probability of a hypothesis\ngiven evidence is equal to the result of multiplying the prior\nprobability of the hypothesis by the conditional probability of the\nevidence given the hypothesis, all divided by the probability of the\nevidence. The explanatory schema for Bayesian cognition is:\n\nExplanation target:\n\nHow does the mind carry out functions such as inference?\n Explanatory pattern:\n\nThe mind has representations for statistical correlations and\nconditional probabilities.\nThe mind has the capacity for probabilistic computations such as\napplications of Bayes\u2019 theorem.\nApplying probabilistic computations to statistical representations\naccomplishes mental tasks such as inference.\n\n\n\nAlthough Bayesian methods have had impressive applications to a wide\nrange of phenomena, their psychological plausibility is debatable\nbecause of assumptions about optimality and computations based on\nprobability theory.\n4.9 Deep learning\n\nArtificial intelligence has been a central part of cognitive since the\n1950s, and the most dramatic recent advances in AI have come from the\napproach of deep learning, which has produced major breakthroughs in\nfields that include game playing, object recognition, and translation.\nDeep learning builds on ideas from connectionism and theoretical\nneuroscience, but uses neural networks with more layers and improved\nalgorithms, benefitting from faster computers and large data bases of\nexamples. Another important innovation is combining learning from\nexamples with reinforcement learning, resulting by 2016 in the\nworld\u2019s leading Go player, AlphaGo. Ideas from deep learning are\nspreading back into neuroscience and also beginning to influence\nresearch in cognitive psychology. The explanatory schema for deep\nlearning is:\n\nExplanation target:\n\nHow does the brain carry out functions such as cognitive\ntasks?\n Explanatory pattern:\n\nThe brain has large numbers of neurons organized into 6\u201320\nlayers.\nThe brain has powerful mechanisms for learning from examples and\nfor learning actions that are reinforced by their successes.\nApplying learning mechanisms to layered neural networks makes them\ncapable of human and sometimes even super-human performance.\n\n\n\nAlthough deep learning has produced dramatic improvements in some AI\nsystems, it is not clear how it can be applied to aspects of human\nthought that include causal reasoning, imagery, emotion, and analogy.\nFor further discussion, see Section 11 (on deep learning) of the entry\non\n connectionism.\n4.10 Predictive processing and active inference\n\nPredictive processing is an approach to theoretical neuroscience that\nviews the brain as constantly generating and updating models of the\nenvironment in order to predict the results of perceptions and\nactions. Active inference is a version of predictive processing that\nhypothesizes that the brain uses Bayesian calculations to minimize\n\u201cfree energy\u201d consisting of discrepancies between\nexpectations and actual observations. Organisms survive when brains\nreduce prediction errors by changing their models of the environment\nor by changing the environment through action.\n\nThe explanatory schema for active inference is:\n\nExplanation target:\n\nHow does the brain function to support perception and action?\n Explanatory pattern:\n\nThe brain is a prediction engine that uses probabilistic models to\nanticipate perceptions and the results of actions.\nTo reduce prediction error, the brain uses Bayesian updating to\nchange its models and uses actions to change its environment, e.g. by\nmoving.\nEffective inference, perception, and action result from these\nreductions in prediction errors.\n\n\n\nActive inference is open to numerous challenges. Is brain functioning\nreally Bayesian updating rather than connectionist constraint\nsatisfaction or deep reinforcement learning? Can predictive processing\nsubsume other brain functions that include pattern recognition,\nexplanation, emotional evaluation, memory, and communication? Does\nactive inference explain high-level cognitive operations such as\ncausal reasoning, language, and creativity?\n5. Philosophical Relevance\n\nSome philosophy, in particular naturalistic philosophy of mind, is\npart of cognitive science. But the interdisciplinary field of\ncognitive science is relevant to philosophy in several ways. First,\nthe psychological, computational, and other results of cognitive\nscience investigations have important potential applications to\ntraditional philosophical problems in epistemology, metaphysics, and\nethics. Second, cognitive science can serve as an object of\nphilosophical critique, particularly concerning the central assumption\nthat thinking is representational and computational. Third and more\nconstructively, cognitive science can be taken as an object of\ninvestigation in the philosophy of science, generating reflections on\nthe methodology and presuppositions of the enterprise.\n5.1 Philosophical Applications\n\nMuch philosophical research today is naturalistic, treating\nphilosophical investigations as continuous with empirical work in\nfields such as psychology. From a naturalistic perspective, philosophy\nof mind is closely allied with theoretical and experimental work in\ncognitive science. Metaphysical conclusions about the nature of mind\nare to be reached, not by a priori speculation, but by informed\nreflection on scientific developments in fields such as psychology,\nneuroscience, and computer science. Similarly, epistemology is not a\nstand-alone conceptual exercise, but depends on and benefits from\nscientific findings concerning mental structures and learning\nprocedures. Ethics can benefit by using greater understanding of the\npsychology of moral thinking to bear on ethical questions such as the\nnature of deliberations concerning right and wrong. Here are some\nphilosophical problems to which ongoing developments in cognitive\nscience are highly relevant. Links are provided to other relevant\narticles in this Encyclopedia.\n\nInnateness.\n To what extent is knowledge innate or acquired by experience? Is\nhuman behavior shaped primarily by nature or nurture?\nLanguage of thought.\n Does the human brain operate with a language-like code or with a more\ngeneral\n connectionist\n architecture? What is the relation between symbolic cognitive models\nusing rules and concepts and sub-symbolic models using neural\nnetworks?\nMental imagery.\n Do human minds think with visual and other kinds of imagery, or only\nwith language-like representations?\nFolk psychology.\n Does a person\u2019s everyday understanding of other people consist\nof having a theory of mind, or of merely being able to simulate\nthem?\nMeaning.\n How do\n mental representations\n acquire meaning or\n mental content?\n To what extent does the meaning of a representation depend on its\nrelation to other representations, its relation to the world, and its\nrelation to a community of thinkers?\nMind-brain identity.\n Are mental states brain states? Or can they be\n multiply realized\n by other material states? What is the relation between psychology and\nneuroscience? Is\n materialism\n true?\nFree will.\n Is human action free or merely caused by brain events?\nMoral psychology.\n How do minds/brains make ethical judgments?\nThe meaning of life.\n How can minds construed naturalistically as brains find value and\nmeaning?\nEmotions.\n What are emotions, and what role do they play in thinking?\nConsciousness.\n Can conscious experience be scientifically explained, for example by\nthe\n neuroscience of consciousness?\nMental disorder.\n What are mental disorders, and how are psychological and neural\nprocesses relevant to their explanation and treatment?\nPerception and reality.\n How do minds/brains form and evaluate representations of the external\nworld?\nPerception and cognition.\n How does perception differ from other kinds of cognition with respect\nto representational format and justification?\nRealism.\n Is cognitive science consistent with views that minds grasp the real\nworld? Could minds be computer simulations? Is virtual reality a kind\nof reality?\nInformation.\n How does cognitive science illuminate the operations of information\nand misinformation in minds and societies?\nSocial science.\n How do explanations of the operations of minds interact with\nexplanations of the operations of groups and societies?\n\n\nAdditional philosophical problems arise from examining the\npresuppositions of current approaches to cognitive science.\n5.2 Critique of Cognitive Science\n\nThe claim that human minds work by representation and computation is\nan empirical conjecture and might be wrong. Although the\n computational-representational\n approach to cognitive science has been successful in explaining many\naspects of human problem solving, learning, and language use, some\nphilosophical critics have claimed that this approach is fundamentally\nmistaken. Critics of cognitive science have offered such challenges\nas:\n\nThe\n emotion\n challenge: Cognitive science neglects the important role of emotions\nin human thinking.\nThe\n consciousness\n challenge: Cognitive science ignores the importance of consciousness\nin human thinking.\nThe world challenge: Cognitive science disregards the significant\nrole of physical environments in human thinking, which is embedded in\nand extended into the world.\nThe body challenge: Cognitive science neglects the contribution of\n embodiment\n to human thought and action.\nThe dynamical systems challenge: The mind is a dynamical system,\nnot a computational system.\nThe social challenge: Human thought is inherently social in ways\nthat cognitive science ignores.\nThe mathematics challenge: Mathematical results show that human\nthinking cannot be computational in the standard sense, so the brain\nmust operate differently, perhaps as a quantum computer.\nThe interdisciplinarity challenge: Cognitive science has failed to\ngo beyond multidisciplinary interactions by developing a core theory\nthat unifies work in its many disciplines.\n\n\nThe first five challenges are increasingly addressed by advances that\nexplain emotions, consciousness, action, and embodiment in terms of\nneural mechanisms. The social challenge is being met by the\ndevelopment of computational models of interacting agents. The\nmathematics challenge is based on misunderstanding of\n G\u00f6del\u2019s theorem\n and on exaggeration of the relevance of quantum theory to neural\nprocesses. Response to the interdisciplinary challenge must recognize\nthat cognitive science still has many contending theoretical\napproaches, without the unification that theories of evolution and\ngenetics provide for biology. Nevertheless, interactions among\npsychology, neuroscience, linguistics, philosophy, anthropology, and\ncomputer modeling have contributed to theoretical and empirical\nprogress concerning many aspects of cognition. For example,\n computational philosophy\n uses programmed models to address questions in epistemology, ethics,\nand other areas of philosophy.\n5.3 Philosophy of Cognitive Science\n\nCognitive science raises many interesting methodological questions\nthat are worthy of investigation by philosophers of science. What is\nthe nature of representation? What role do computational models play\nin the development of cognitive theories? What is the relation among\napparently competing accounts of mind involving symbolic processing,\nneural networks, and dynamical systems? What is the relation among the\nvarious fields of cognitive science such as psychology, linguistics,\nand neuroscience? Are psychological phenomena subject to reductionist\nexplanations via neuroscience? Are levels of explanation best\ncharacterized in terms of ontological levels (molecular, neural,\npsychological, social) or methodological ones (computational,\nalgorithmic, physical)?\n\nThe increasing prominence of neural explanations in cognitive, social,\ndevelopmental, and clinical psychology raises important philosophical\nquestions about\n explanation\n and\n reduction.\n Anti-reductionism, according to which psychological explanations are\ncompletely independent of neurological ones, is becoming increasingly\nimplausible, but it remains controversial to what extent psychology\ncan be reduced to neuroscience and molecular biology. Crucial to\nanswering questions about the nature of reduction are answers to\nquestions about the nature of explanation. Explanations in psychology,\nneuroscience, and biology in general are plausibly viewed as\ndescriptions of\n mechanisms,\n which are combinations of connected parts that interact to produce\nregular changes. In psychological explanations, the parts are mental\nrepresentations that interact by computational procedures to produce\nnew representations. In neuroscientific explanations, the parts are\nneural populations that interact by electrochemical processes to\nproduce new neural activity that leads to actions. If progress in\ntheoretical neuroscience continues, it should become possible to tie\npsychological to neurological explanations by showing how mental\nrepresentations such as concepts are constituted by activities in\nneural populations, and how computational procedures such as spreading\nactivation among concepts are carried out by neural processes.\n\nThe increasing integration of cognitive psychology with neuroscience\nprovides evidence for the\n mind-brain identity theory\n according to which mental processes are neural, representational, and\ncomputational. Other philosophers dispute such identification on the\ngrounds that minds are embodied in biological systems and extended\ninto the world. However, moderate claims about embodiment are\nconsistent with the identity theory because brain representations\noperate in several modalities (e.g. visual and motor) that enable\nminds to deal with the world. Another materialist alternative to\nmind-brain identity comes from recognizing that explanations of mind\nemploy molecular and social mechanisms as well as neural and\nrepresentational ones.\n",
+    "bibliography": {
+        "categories": [],
+        "cat_ref_text": {
+            "ref_list": [
+                "Anderson, J. R., 2007. <em>How Can the Mind Occur in the Physical\nUniverse?</em>, Oxford: Oxford University Press.",
+                "\u2013\u2013\u2013, 2010. <em>Cognitive Psychology and its\nImplications</em>, 7th edition, New York: Worth.",
+                "Bechtel, W., 2008. <em>Mental Mechanisms: Philosophical\nPerspectives on Cognitive Neurosciences</em>, New York:\nRoutledge.",
+                "Bechtel, W., &amp; Graham, G. (eds.), 1998. <em>A Companion to\nCognitive Science</em>, Malden, MA: Blackwell.",
+                "Bechtel, W., Mandik, P., Mundale, J., &amp; Stufflebeam, R. S.\n(eds.), 2001. <em>Philosophy and the Neurosciences: A Reader</em>,\nMalden, MA: Blackwell.",
+                "Berm\u00fadez, J. L., 2022. <em>Cognitive Science: An\nIntroduction to the Science of the Mind</em>, 4th edition, Cambridge:\nCambridge University Press.",
+                "Blouw, P., Solodkin, E., Thagard, P., &amp; Eliasmith, C., 2016.\n\u201cConcepts as Semantic Pointers: A Framework and Computational\nModel,\u201d <em>Cognitive Science</em>, 40: 1128\u20131162.",
+                "Chalmers, D. J., 2022. <em>Reality+: Virtual Worlds and the\nProblems of Philosophy</em>, New York: Norton.",
+                "Boden, M. A., 2006. <em>Mind as Machine: A History of Cognitive\nScience</em> , Oxford: Clarendon.",
+                "Chemero, A., 2009. <em>Radical Embodied Cognitive Science</em>,\nCambridge, MA: MIT Press.",
+                "Churchland, P. M., 2007. <em>Neurophilosophy at Work</em>,\nCambridge: Cambridge University Press.",
+                "Churchland, P. S., 2002. <em>Brain-wise: Studies in\nNeurophilosophy</em>, Cambridge, MA: MIT Press.",
+                "Clark, A., 2001. <em>Mindware: An Introduction to the Philosophy\nof Cognitive science</em>, New York: Oxford University Press.",
+                "\u2013\u2013\u2013, 2008. <em>Supersizing the Mind: Embodiment,\nAction, and Cognitive Extension</em>, New York: Oxford University\nPress.",
+                "\u2013\u2013\u2013, 2015. <em>Surfing Uncertainty: Prediction,\nAction, and the Embodied mind</em>, Oxford: Oxford University\nPress.",
+                "Craver, C. F., 2007. <em>Explaining the Brain</em>, Oxford: Oxford\nUniversity Press.",
+                "Dayan, P., &amp; Abbott, L. F., 2001. <em>Theoretical\nNeuroscience: Computational and Mathematical Modeling of Neural\nSystems</em>, Cambridge, MA: MIT Press.",
+                "Dehaene, S., 2014. <em>Consciousness and the Brain: Deciphering\nHow the Brain Codes Our Thoughts</em>, New York: Viking.",
+                "Doya, K., Ishii, S., Pouget, A., &amp; Rao, A. (eds.), 2007.\n<em>Bayesian Brain</em>, Cambridge, MA: MIT Press.",
+                "Dreyfus, H. L., 1992. <em>What Computers Still Can\u2019t\nDo</em>, 3rd edition, Cambridge, MA: MIT Press.",
+                "Eliasmith, C., 2013. <em>How to Build a Brain: A Neural\nArchitecture for Biological Cognition</em>, Oxford: Oxford University\nPress.",
+                "Eliasmith, C., &amp; Anderson, C. H., 2003. <em>Neural\nEngineering: Computation, Representation and Dynamics in\nNeurobiological Systems</em>, Cambridge, MA: MIT Press.",
+                "Forbus, K. D., Ferguson, R. W., Lovett, A., &amp; Gentner, D.,\n2017. \u201cExtending SME to Handle Larger-Scale Cognitive\nmodeling,\u201d. <em>Cognitive Science</em>, 41(5):\n1152\u20131201.",
+                "Friedenberg, J. D., &amp; Silverman, G., 2021. <em>Cognitive\nScience: An Introduction to the Study of Mind</em>, 4th edition,\nThousand Oaks, CA: Sage.",
+                "Gibbs, R. W., 2005, <em>Embodiment and Cognitive Science</em>,\nCambridge: Cambridge University Press.",
+                "Goldman, A., 1993. <em>Philosophical Applications of Cognitive\nScience</em>, Boulder: Westview Press.",
+                "Goodfellow, I., Bengio, Y., &amp; Courville, A., 2016. <em>Deep\nLearning</em>, Cambridge, MA: MIT Press.",
+                "Griffiths, T. L., Kemp, C., &amp; Tenenbaum, J. B., 2008.\n\u201cBayesian Models of Cognition,\u201d in R. Sun (ed.), <em>The\nCambridge Handbook of Computational Psychology</em>, Cambridge:\nCambridge University Press, pp. 59\u2013100.",
+                "Hoffman, D., 2019. <em>The Case against Reality: Why Evolution Hid\nthe Truth From our Eyes</em>, New York: WW Norton &amp; Company.",
+                "Hofstadter, D., &amp; Sander, E., 2013. <em>Surfaces and Essences:\nAnalogy as the Fuel and Fire of Thinking</em>, New York: Basic\nBooks.",
+                "Holyoak, K. J., &amp; Morrison, R. G. (eds.), 2012. <em>The Oxford\nHandbook of Thinking and Reasoning</em>, New York: Oxford University\nPress.",
+                "Knobe, J., &amp; Nichols, S. (eds.), 2008. <em>Experimental\nPhilosophy</em>, Oxford: Oxford University Press.",
+                "Kallens, P. C., Dale, R., &amp; Christiansen, M. H., 2022.\n\u201cQuantifying Interdisciplinarity in Cognitive Science and\nBeyond.\u201d <em>Topics in Cognitive Science</em>, 14(3):\n634\u2013645.",
+                "Kosslyn, S. M., Thompson, W. L., &amp; Ganis, G., 2016. <em>The\nCase for Mental Imagery</em>, New York: Oxford University Press.",
+                "Laird, J. E., LeBiere, C., &amp; Rosenbloom, P. S., 2017. \u201cA\nStandard Model of the Mind: Toward a Common Computational Framework\nacross Artificial Intelligence, Cognitive Science, Neuroscience, and\nRobotics,\u201d <em>AI Magazine</em>, 38(4): 13\u201326.",
+                "Lecun, Y., Bengio, Y., &amp; Hinton, Y., 2015. \u201cDeep\nLearning,\u201d <em>Nature</em>, 521(7553): 436\u2013444.",
+                "Margolis, E. &amp; Laurence, S. (eds.), 2015. <em>The Conceptual\nMind: New Directions in the Study of Concepts</em>, Cambridge, MA: MIT\nPress.",
+                "McCauley, R. N., 2007. \u201cReduction: Models of\nCross-scientific Relations and their Implications for the\nPsychology-neuroscience Interface,\u201d in P. Thagard (ed.),\n<em>Philosophy of Psychology and Cognitive Science</em>, Amsterdam:\nElsevier, pp. 105\u2013158.",
+                "Milkowski, M., 2013. <em>Explaining the Computational Mind</em>,\nCambridge, MA: MIT Press.",
+                "Murphy, D., 2006. <em>Psychiatry in the Scientific Image</em>,\nCambridge, MA: MIT Press.",
+                "Nadel, L. (ed.), 2003. <em>Encyclopedia of Cognitive Science</em>,\nLondon:Nature Publishing Group.",
+                "Nisbett, R., 2003. <em>The Geography of Thought: How Asians and\nWesterners Think Differently \u2026 and Why</em>, New York: Free\nPress.",
+                "N\u00fa\u00f1ez, R., Allen, M., Gao, R., Miller Rigoli, C.,\nRelaford-Doyle, J., &amp; Semenuks, A., 2019. \u201cWhat Happened to\nCognitive Science?\u201d <em>Nature Human Behavior</em>, 3(8):\n782\u2013791.",
+                "O\u2019Callaghan, C. <em>A Multisensory Philosophy of\nPerception</em>. Oxford: Oxford University of Press.",
+                "O\u2019Reilly, R. C., Munakata, Y., Frank, M. J., Hazy, T. E.,\n&amp; Contributors, 2012. <em>Computational Cognitive\nNeuroscience</em>, Wiki Book,\n [<a href=\"https://med.libretexts.org/Bookshelves/Pharmacology_and_Neuroscience/Book%3A_Computational_Cognitive_Neuroscience_(O%27Reilly_and_Munakata)\" target=\"other\">O\u2019Reilly et al. 2012 available online</a>].",
+                "Parr, T., Pezzulo, G., &amp; Friston, K. J., 2022. <em>Active\nInference: The Free Energy Principle in Mind, Brain, and\nBehaviour</em>, Cambridge, MA: MIT Press.",
+                "Pearl, J., &amp; Mackenzie, D., 2018. <em>The Book of Why: The New\nScience of Cause and Effect</em>, New York: Basic Books.",
+                "Pessoa, L., 2013. <em>The Cognitive-Emotional Brain: From\nInteractions to Integration</em>, Cambridge, MA: MIT Press.",
+                "Piantadosi, S. T., Tenenbaum, J. B., &amp; Goodman, N. D., 2015.\n\u201cThe Logical Primitives of Thought: Empirical Foundations for\nCompositional Cognitive Models,\u201d. <em>Psychological Review</em>,\n123(4), 392\u2013424.",
+                "Polk, T. A., &amp; Seifert, C. M. (eds.), 2002. <em>Cognitive\nModeling</em>, Cambridge, MA: MIT Press.",
+                "Quilty-Dunn, J., 2020. \u201cPerceptual pluralism,\u201d\n<em>No\u00fbs</em>, 54(4): 807\u2013838.",
+                "Rogers, T. T., &amp; McClelland, J. L., 2004. <em>Semantic\nCognition: A Parallel Distributed Processing Approach</em>, Cambridge,\nMA: MIT Press.",
+                "Russell, S., &amp; Norvig, P., 2020. <em>Artificial Intelligence:\nA Modern Approach</em>, 4th edition, New York: Pearson.",
+                "Seth, A., 2021. <em>Being You: A New Science of\nConsciousness</em>, New York: Dutton",
+                "Smith, E. E.., &amp; Kosslyn, S. M., 2007. <em>Cognitive\nPsychology: Mind and Brain</em>, Upper Saddle River, NJ: Pearson\nPrentice Hall.",
+                "Sun, R. (ed.), 2008. <em>The Cambridge Handbook of Computational\nPsychology</em>, Cambridge: Cambridge University Press.",
+                "\u2013\u2013\u2013 (ed.), 2012. <em>Grounding Social Sciences\nin Cognitive Sciences</em>, Cambridge, MA: MIT Press.",
+                "Thagard, P., 2005. <em>Mind: Introduction to Cognitive\nScience</em>, second edition, Cambridge, MA: MIT Press.",
+                "\u2013\u2013\u2013, 2009. \u201cWhy cognitive science needs\nphilosophy and vice versa, \u201d <em>Topics in Cognitive\nScience</em>, 1: 237\u2013254.",
+                "\u2013\u2013\u2013, 2010. <em>The Brain and the Meaning of\nLife</em>, Princeton: Princeton University Press.",
+                "\u2013\u2013\u2013, 2012. <em>The Cognitive Science of Science:\nExplanation, Discovery, and Conceptual Change</em>, Cambridge, MA: MIT\nPress.",
+                "\u2013\u2013\u2013, 2019a. <em>Brain-Mind: From Neurons to\nConsciousness and Creativity</em>, Oxford: Oxford University\nPress.",
+                "\u2013\u2013\u2013, 2019b. <em>Natural Philosophy: From Social\nBrains to Knowledge, Reality, Morality, and Beauty</em>, New York:\nOxford University Press.",
+                "\u2013\u2013\u2013, 2021. <em>Bots and Beasts: What Makes\nMachines, Animals, and People Smart?</em> Cambridge, MA: MIT\nPress.",
+                "Thompson, E., 2007. <em>Mind in Life: Biology, Phenomenology, and\nthe Science of Mind</em>, Cambridge, MA: Harvard University\nPress.",
+                "Varela, F. J., Thompson, E., &amp; Rosch, E., 2016. <em>The\nEmbodied Mind: Cognitive Science and Human Experience</em>, revised\nedition, Cambridge, MA: MIT Press.",
+                "Wilson, R. A., &amp; Keil, F. C. (eds.), 1999. <em>The MIT\nEncyclopedia of the Cognitive Sciences</em>, Cambridge, MA: MIT\nPress."
+            ]
+        },
+        "raw_text": "<div id=\"bibliography\">\n<h2><a name=\"Bib\">Bibliography</a></h2>\n<ul class=\"hanging\">\n<li>Anderson, J. R., 2007. <em>How Can the Mind Occur in the Physical\nUniverse?</em>, Oxford: Oxford University Press.</li>\n<li>\u2013\u2013\u2013, 2010. <em>Cognitive Psychology and its\nImplications</em>, 7th edition, New York: Worth.</li>\n<li>Bechtel, W., 2008. <em>Mental Mechanisms: Philosophical\nPerspectives on Cognitive Neurosciences</em>, New York:\nRoutledge.</li>\n<li>Bechtel, W., &amp; Graham, G. (eds.), 1998. <em>A Companion to\nCognitive Science</em>, Malden, MA: Blackwell.</li>\n<li>Bechtel, W., Mandik, P., Mundale, J., &amp; Stufflebeam, R. S.\n(eds.), 2001. <em>Philosophy and the Neurosciences: A Reader</em>,\nMalden, MA: Blackwell.</li>\n<li>Berm\u00fadez, J. L., 2022. <em>Cognitive Science: An\nIntroduction to the Science of the Mind</em>, 4th edition, Cambridge:\nCambridge University Press.</li>\n<li>Blouw, P., Solodkin, E., Thagard, P., &amp; Eliasmith, C., 2016.\n\u201cConcepts as Semantic Pointers: A Framework and Computational\nModel,\u201d <em>Cognitive Science</em>, 40: 1128\u20131162.</li>\n<li>Chalmers, D. J., 2022. <em>Reality+: Virtual Worlds and the\nProblems of Philosophy</em>, New York: Norton.</li>\n<li>Boden, M. A., 2006. <em>Mind as Machine: A History of Cognitive\nScience</em> , Oxford: Clarendon.</li>\n<li>Chemero, A., 2009. <em>Radical Embodied Cognitive Science</em>,\nCambridge, MA: MIT Press.</li>\n<li>Churchland, P. M., 2007. <em>Neurophilosophy at Work</em>,\nCambridge: Cambridge University Press.</li>\n<li>Churchland, P. S., 2002. <em>Brain-wise: Studies in\nNeurophilosophy</em>, Cambridge, MA: MIT Press.</li>\n<li>Clark, A., 2001. <em>Mindware: An Introduction to the Philosophy\nof Cognitive science</em>, New York: Oxford University Press.</li>\n<li>\u2013\u2013\u2013, 2008. <em>Supersizing the Mind: Embodiment,\nAction, and Cognitive Extension</em>, New York: Oxford University\nPress.</li>\n<li>\u2013\u2013\u2013, 2015. <em>Surfing Uncertainty: Prediction,\nAction, and the Embodied mind</em>, Oxford: Oxford University\nPress.</li>\n<li>Craver, C. F., 2007. <em>Explaining the Brain</em>, Oxford: Oxford\nUniversity Press.</li>\n<li>Dayan, P., &amp; Abbott, L. F., 2001. <em>Theoretical\nNeuroscience: Computational and Mathematical Modeling of Neural\nSystems</em>, Cambridge, MA: MIT Press.</li>\n<li>Dehaene, S., 2014. <em>Consciousness and the Brain: Deciphering\nHow the Brain Codes Our Thoughts</em>, New York: Viking.</li>\n<li>Doya, K., Ishii, S., Pouget, A., &amp; Rao, A. (eds.), 2007.\n<em>Bayesian Brain</em>, Cambridge, MA: MIT Press.</li>\n<li>Dreyfus, H. L., 1992. <em>What Computers Still Can\u2019t\nDo</em>, 3rd edition, Cambridge, MA: MIT Press.</li>\n<li>Eliasmith, C., 2013. <em>How to Build a Brain: A Neural\nArchitecture for Biological Cognition</em>, Oxford: Oxford University\nPress.</li>\n<li>Eliasmith, C., &amp; Anderson, C. H., 2003. <em>Neural\nEngineering: Computation, Representation and Dynamics in\nNeurobiological Systems</em>, Cambridge, MA: MIT Press.</li>\n<li>Forbus, K. D., Ferguson, R. W., Lovett, A., &amp; Gentner, D.,\n2017. \u201cExtending SME to Handle Larger-Scale Cognitive\nmodeling,\u201d. <em>Cognitive Science</em>, 41(5):\n1152\u20131201.</li>\n<li>Friedenberg, J. D., &amp; Silverman, G., 2021. <em>Cognitive\nScience: An Introduction to the Study of Mind</em>, 4th edition,\nThousand Oaks, CA: Sage.</li>\n<li>Gibbs, R. W., 2005, <em>Embodiment and Cognitive Science</em>,\nCambridge: Cambridge University Press.</li>\n<li>Goldman, A., 1993. <em>Philosophical Applications of Cognitive\nScience</em>, Boulder: Westview Press.</li>\n<li>Goodfellow, I., Bengio, Y., &amp; Courville, A., 2016. <em>Deep\nLearning</em>, Cambridge, MA: MIT Press.</li>\n<li>Griffiths, T. L., Kemp, C., &amp; Tenenbaum, J. B., 2008.\n\u201cBayesian Models of Cognition,\u201d in R. Sun (ed.), <em>The\nCambridge Handbook of Computational Psychology</em>, Cambridge:\nCambridge University Press, pp. 59\u2013100.</li>\n<li>Hoffman, D., 2019. <em>The Case against Reality: Why Evolution Hid\nthe Truth From our Eyes</em>, New York: WW Norton &amp; Company.</li>\n<li>Hofstadter, D., &amp; Sander, E., 2013. <em>Surfaces and Essences:\nAnalogy as the Fuel and Fire of Thinking</em>, New York: Basic\nBooks.</li>\n<li>Holyoak, K. J., &amp; Morrison, R. G. (eds.), 2012. <em>The Oxford\nHandbook of Thinking and Reasoning</em>, New York: Oxford University\nPress.</li>\n<li>Knobe, J., &amp; Nichols, S. (eds.), 2008. <em>Experimental\nPhilosophy</em>, Oxford: Oxford University Press.</li>\n<li>Kallens, P. C., Dale, R., &amp; Christiansen, M. H., 2022.\n\u201cQuantifying Interdisciplinarity in Cognitive Science and\nBeyond.\u201d <em>Topics in Cognitive Science</em>, 14(3):\n634\u2013645.</li>\n<li>Kosslyn, S. M., Thompson, W. L., &amp; Ganis, G., 2016. <em>The\nCase for Mental Imagery</em>, New York: Oxford University Press.</li>\n<li>Laird, J. E., LeBiere, C., &amp; Rosenbloom, P. S., 2017. \u201cA\nStandard Model of the Mind: Toward a Common Computational Framework\nacross Artificial Intelligence, Cognitive Science, Neuroscience, and\nRobotics,\u201d <em>AI Magazine</em>, 38(4): 13\u201326.</li>\n<li>Lecun, Y., Bengio, Y., &amp; Hinton, Y., 2015. \u201cDeep\nLearning,\u201d <em>Nature</em>, 521(7553): 436\u2013444.</li>\n<li>Margolis, E. &amp; Laurence, S. (eds.), 2015. <em>The Conceptual\nMind: New Directions in the Study of Concepts</em>, Cambridge, MA: MIT\nPress.</li>\n<li>McCauley, R. N., 2007. \u201cReduction: Models of\nCross-scientific Relations and their Implications for the\nPsychology-neuroscience Interface,\u201d in P. Thagard (ed.),\n<em>Philosophy of Psychology and Cognitive Science</em>, Amsterdam:\nElsevier, pp. 105\u2013158.</li>\n<li>Milkowski, M., 2013. <em>Explaining the Computational Mind</em>,\nCambridge, MA: MIT Press.</li>\n<li>Murphy, D., 2006. <em>Psychiatry in the Scientific Image</em>,\nCambridge, MA: MIT Press.</li>\n<li>Nadel, L. (ed.), 2003. <em>Encyclopedia of Cognitive Science</em>,\nLondon:Nature Publishing Group.</li>\n<li>Nisbett, R., 2003. <em>The Geography of Thought: How Asians and\nWesterners Think Differently \u2026 and Why</em>, New York: Free\nPress.</li>\n<li>N\u00fa\u00f1ez, R., Allen, M., Gao, R., Miller Rigoli, C.,\nRelaford-Doyle, J., &amp; Semenuks, A., 2019. \u201cWhat Happened to\nCognitive Science?\u201d <em>Nature Human Behavior</em>, 3(8):\n782\u2013791.</li>\n<li>O\u2019Callaghan, C. <em>A Multisensory Philosophy of\nPerception</em>. Oxford: Oxford University of Press.</li>\n<li>O\u2019Reilly, R. C., Munakata, Y., Frank, M. J., Hazy, T. E.,\n&amp; Contributors, 2012. <em>Computational Cognitive\nNeuroscience</em>, Wiki Book,\n [<a href=\"https://med.libretexts.org/Bookshelves/Pharmacology_and_Neuroscience/Book%3A_Computational_Cognitive_Neuroscience_(O%27Reilly_and_Munakata)\" target=\"other\">O\u2019Reilly et al. 2012 available online</a>].</li>\n<li>Parr, T., Pezzulo, G., &amp; Friston, K. J., 2022. <em>Active\nInference: The Free Energy Principle in Mind, Brain, and\nBehaviour</em>, Cambridge, MA: MIT Press.</li>\n<li>Pearl, J., &amp; Mackenzie, D., 2018. <em>The Book of Why: The New\nScience of Cause and Effect</em>, New York: Basic Books.</li>\n<li>Pessoa, L., 2013. <em>The Cognitive-Emotional Brain: From\nInteractions to Integration</em>, Cambridge, MA: MIT Press.</li>\n<li>Piantadosi, S. T., Tenenbaum, J. B., &amp; Goodman, N. D., 2015.\n\u201cThe Logical Primitives of Thought: Empirical Foundations for\nCompositional Cognitive Models,\u201d. <em>Psychological Review</em>,\n123(4), 392\u2013424.</li>\n<li>Polk, T. A., &amp; Seifert, C. M. (eds.), 2002. <em>Cognitive\nModeling</em>, Cambridge, MA: MIT Press.</li>\n<li>Quilty-Dunn, J., 2020. \u201cPerceptual pluralism,\u201d\n<em>No\u00fbs</em>, 54(4): 807\u2013838.</li>\n<li>Rogers, T. T., &amp; McClelland, J. L., 2004. <em>Semantic\nCognition: A Parallel Distributed Processing Approach</em>, Cambridge,\nMA: MIT Press.</li>\n<li>Russell, S., &amp; Norvig, P., 2020. <em>Artificial Intelligence:\nA Modern Approach</em>, 4th edition, New York: Pearson.</li>\n<li>Seth, A., 2021. <em>Being You: A New Science of\nConsciousness</em>, New York: Dutton</li>\n<li>Smith, E. E.., &amp; Kosslyn, S. M., 2007. <em>Cognitive\nPsychology: Mind and Brain</em>, Upper Saddle River, NJ: Pearson\nPrentice Hall.</li>\n<li>Sun, R. (ed.), 2008. <em>The Cambridge Handbook of Computational\nPsychology</em>, Cambridge: Cambridge University Press.</li>\n<li>\u2013\u2013\u2013 (ed.), 2012. <em>Grounding Social Sciences\nin Cognitive Sciences</em>, Cambridge, MA: MIT Press.</li>\n<li>Thagard, P., 2005. <em>Mind: Introduction to Cognitive\nScience</em>, second edition, Cambridge, MA: MIT Press.</li>\n<li>\u2013\u2013\u2013, 2009. \u201cWhy cognitive science needs\nphilosophy and vice versa, \u201d <em>Topics in Cognitive\nScience</em>, 1: 237\u2013254.</li>\n<li>\u2013\u2013\u2013, 2010. <em>The Brain and the Meaning of\nLife</em>, Princeton: Princeton University Press.</li>\n<li>\u2013\u2013\u2013, 2012. <em>The Cognitive Science of Science:\nExplanation, Discovery, and Conceptual Change</em>, Cambridge, MA: MIT\nPress.</li>\n<li>\u2013\u2013\u2013, 2019a. <em>Brain-Mind: From Neurons to\nConsciousness and Creativity</em>, Oxford: Oxford University\nPress.</li>\n<li>\u2013\u2013\u2013, 2019b. <em>Natural Philosophy: From Social\nBrains to Knowledge, Reality, Morality, and Beauty</em>, New York:\nOxford University Press.</li>\n<li>\u2013\u2013\u2013, 2021. <em>Bots and Beasts: What Makes\nMachines, Animals, and People Smart?</em> Cambridge, MA: MIT\nPress.</li>\n<li>Thompson, E., 2007. <em>Mind in Life: Biology, Phenomenology, and\nthe Science of Mind</em>, Cambridge, MA: Harvard University\nPress.</li>\n<li>Varela, F. J., Thompson, E., &amp; Rosch, E., 2016. <em>The\nEmbodied Mind: Cognitive Science and Human Experience</em>, revised\nedition, Cambridge, MA: MIT Press.</li>\n<li>Wilson, R. A., &amp; Keil, F. C. (eds.), 1999. <em>The MIT\nEncyclopedia of the Cognitive Sciences</em>, Cambridge, MA: MIT\nPress.</li>\n</ul>\n</div>"
+    },
+    "related_entries": {
+        "entry_list": [
+            "artificial intelligence",
+            "artificial intelligence: logic and",
+            "behaviorism",
+            "cognition: embodied",
+            "computational philosophy",
+            "concepts",
+            "connectionism",
+            "consciousness",
+            "consciousness: neuroscience of",
+            "emotion",
+            "experimental philosophy",
+            "folk psychology: as a theory",
+            "folk psychology: as mental simulation",
+            "free will",
+            "innate/acquired distinction",
+            "innateness: and contemporary theories of cognition",
+            "intentionality",
+            "language of thought hypothesis",
+            "learning, perceptual",
+            "meaning, theories of",
+            "memory",
+            "mental content: causal theories of",
+            "mental disorder",
+            "mental imagery",
+            "mental representation",
+            "mind/brain identity theory",
+            "mind: computational theory of",
+            "mind: modularity of",
+            "moral psychology: empirical approaches",
+            "neuroscience, philosophy of",
+            "perception: the contents of"
+        ],
+        "entry_link": [
+            {
+                "../artificial-intelligence/": "artificial intelligence"
+            },
+            {
+                "../logic-ai/": "artificial intelligence: logic and"
+            },
+            {
+                "../behaviorism/": "behaviorism"
+            },
+            {
+                "../embodied-cognition/": "cognition: embodied"
+            },
+            {
+                "../computational-philosophy/": "computational philosophy"
+            },
+            {
+                "../concepts/": "concepts"
+            },
+            {
+                "../connectionism/": "connectionism"
+            },
+            {
+                "../consciousness/": "consciousness"
+            },
+            {
+                "../consciousness-neuroscience/": "consciousness: neuroscience of"
+            },
+            {
+                "../emotion/": "emotion"
+            },
+            {
+                "../experimental-philosophy/": "experimental philosophy"
+            },
+            {
+                "../folkpsych-theory/": "folk psychology: as a theory"
+            },
+            {
+                "../folkpsych-simulation/": "folk psychology: as mental simulation"
+            },
+            {
+                "../freewill/": "free will"
+            },
+            {
+                "../innate-acquired/": "innate/acquired distinction"
+            },
+            {
+                "../innateness-cognition/": "innateness: and contemporary theories of cognition"
+            },
+            {
+                "../intentionality/": "intentionality"
+            },
+            {
+                "../language-thought/": "language of thought hypothesis"
+            },
+            {
+                "../perceptual-learning/": "learning, perceptual"
+            },
+            {
+                "../meaning/": "meaning, theories of"
+            },
+            {
+                "../memory/": "memory"
+            },
+            {
+                "../content-causal/": "mental content: causal theories of"
+            },
+            {
+                "../mental-disorder/": "mental disorder"
+            },
+            {
+                "../mental-imagery/": "mental imagery"
+            },
+            {
+                "../mental-representation/": "mental representation"
+            },
+            {
+                "../mind-identity/": "mind/brain identity theory"
+            },
+            {
+                "../computational-mind/": "mind: computational theory of"
+            },
+            {
+                "../modularity-mind/": "mind: modularity of"
+            },
+            {
+                "../moral-psych-emp/": "moral psychology: empirical approaches"
+            },
+            {
+                "../neuroscience/": "neuroscience, philosophy of"
+            },
+            {
+                "../perception-contents/": "perception: the contents of"
+            }
+        ]
+    },
+    "academic_tools": {
+        "listed_text": [
+            "<img alt=\"sep man icon\" src=\"../../symbols/sepman-icon.jpg\"/>",
+            "<a href=\"https://plato.stanford.edu/cgi-bin/encyclopedia/archinfo.cgi?entry=cognitive-science\" target=\"other\">How to cite this entry</a>.",
+            "<img alt=\"sep man icon\" src=\"../../symbols/sepman-icon.jpg\"/>",
+            "<a href=\"https://leibniz.stanford.edu/friends/preview/cognitive-science/\" target=\"other\">Preview the PDF version of this entry</a> at the\n <a href=\"https://leibniz.stanford.edu/friends/\" target=\"other\">Friends of the SEP Society</a>.",
+            "<img alt=\"inpho icon\" src=\"../../symbols/inpho.png\"/>",
+            "<a href=\"https://www.inphoproject.org/entity?sep=cognitive-science&amp;redirect=True\" target=\"other\">Look up topics and thinkers related to this entry</a>\n at the Internet Philosophy Ontology Project (InPhO).",
+            "<img alt=\"phil papers icon\" src=\"../../symbols/pp.gif\"/>",
+            "<a href=\"https://philpapers.org/sep/cognitive-science/\" target=\"other\">Enhanced bibliography for this entry</a>\nat <a href=\"https://philpapers.org/\" target=\"other\">PhilPapers</a>, with links to its database."
+        ],
+        "listed_links": [
+            {
+                "https://plato.stanford.edu/cgi-bin/encyclopedia/archinfo.cgi?entry=cognitive-science": "How to cite this entry"
+            },
+            {
+                "https://leibniz.stanford.edu/friends/preview/cognitive-science/": "Preview the PDF version of this entry"
+            },
+            {
+                "https://leibniz.stanford.edu/friends/": "Friends of the SEP Society"
+            },
+            {
+                "https://www.inphoproject.org/entity?sep=cognitive-science&redirect=True": "Look up topics and thinkers related to this entry"
+            },
+            {
+                "https://philpapers.org/sep/cognitive-science/": "Enhanced bibliography for this entry"
+            },
+            {
+                "https://philpapers.org/": "PhilPapers"
+            }
+        ]
+    },
+    "other_internet_resources": {
+        "listed_text": [
+            "<a href=\"http://aima.cs.berkeley.edu/books.html\" target=\"other\">Artificial Intelligence on the Web</a>",
+            "<a href=\"http://mechanism.ucsd.edu/%7Ebill/research/ANAUT.html\" target=\"other\">Biographies of Major Contributors to Cognitive Science</a>",
+            "<a href=\"http://www.bcp.psych.ualberta.ca/%7emike/Pearl_Street/Dictionary/dictionary.html\" target=\"other\">Cognitive Science Dictionary, University of Alberta</a>",
+            "<a href=\"http://www.cognitivesciencesociety.org/\" target=\"other\">Cognitive Science Society</a>",
+            "<a href=\"https://sites.google.com/site/minddict/\" target=\"other\">Dictionary of Philosophy of Mind</a>",
+            "<a href=\"http://cogsci.uwaterloo.ca/courses/Phil256/glossary.htm\" target=\"other\">Glossary of Cognitive Science</a>",
+            "<a href=\"http://www.sciencedaily.com/news/mind_brain/\" target=\"other\">Mind and Brain News from Science Daily</a>"
+        ],
+        "listed_links": [
+            {
+                "http://aima.cs.berkeley.edu/books.html": "Artificial Intelligence on the Web"
+            },
+            {
+                "http://mechanism.ucsd.edu/%7Ebill/research/ANAUT.html": "Biographies of Major Contributors to Cognitive Science"
+            },
+            {
+                "http://www.bcp.psych.ualberta.ca/%7emike/Pearl_Street/Dictionary/dictionary.html": "Cognitive Science Dictionary, University of Alberta"
+            },
+            {
+                "http://www.cognitivesciencesociety.org/": "Cognitive Science Society"
+            },
+            {
+                "https://sites.google.com/site/minddict/": "Dictionary of Philosophy of Mind"
+            },
+            {
+                "http://cogsci.uwaterloo.ca/courses/Phil256/glossary.htm": "Glossary of Cognitive Science"
+            },
+            {
+                "http://www.sciencedaily.com/news/mind_brain/": "Mind and Brain News from Science Daily"
+            }
+        ]
+    }
+}

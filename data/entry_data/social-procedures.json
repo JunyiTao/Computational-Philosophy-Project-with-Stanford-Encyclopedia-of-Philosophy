@@ -1,0 +1,370 @@
+{
+    "url": "social-procedures",
+    "title": "Formal Approaches to Social Procedures",
+    "authorship": {
+        "year": "Copyright \u00a9 2019",
+        "author_text": "Jan van Eijck\n\nRineke (L.C.) Verbrugge\n<L.C.Verbrugge@rug.nl>",
+        "author_links": [
+            {
+                "https://staff.fnwi.uva.nl/d.j.n.vaneijck2/": "Jan van Eijck"
+            },
+            {
+                "https://rinekeverbrugge.nl/": "Rineke (L.C.) Verbrugge"
+            },
+            {
+                "mailto:L%2eC%2eVerbrugge%40rug%2enl": "L.C.Verbrugge@rug.nl"
+            }
+        ],
+        "raw_html": "<div id=\"article-copyright\">\n<p>\n<a href=\"../../info.html#c\">Copyright \u00a9 2019</a> by\n\n<br/>\n<a href=\"https://staff.fnwi.uva.nl/d.j.n.vaneijck2/\" target=\"other\">Jan van Eijck</a>\n<br/>\n<a href=\"https://rinekeverbrugge.nl/\" target=\"other\">Rineke (L.C.) Verbrugge</a>\n&lt;<a href=\"mailto:L%2eC%2eVerbrugge%40rug%2enl\"><em>L<abbr title=\" dot \">.</abbr>C<abbr title=\" dot \">.</abbr>Verbrugge<abbr title=\" at \">@</abbr>rug<abbr title=\" dot \">.</abbr>nl</em></a>&gt;\n    </p>\n</div>"
+    },
+    "pubinfo": [
+        "First published Mon Sep 8, 2014",
+        "substantive revision Thu Nov 7, 2019"
+    ],
+    "preamble": "\n\nSocial procedures that have algorithmic aspects can often be improved\nby redesign. This holds for voting and other peaceful decision making\nprocedures, for match-making, for auctioning, for fair division of\nestates, and for many procedures of distributive justice. The\nalgorithmic aspects can be analyzed with formal methods. The term\n\u201csocial software\u201d was coined by Rohit Parikh (2002)\nfor the emerging interdisciplinary\nenterprise that is concerned with the design and analysis of\nalgorithms that regulate social processes. Such analysis and\n(re-)design uses methods from logic, game theory and theoretical\ncomputer\n science.[1]\n The goals of research in formal approaches to social procedures are\nmodeling social situations, developing theories of correctness, and\n(re-)designing social procedures, ideally leading to new social\nbehavior.\n\nLogic, game theory and computer science are not the only disciplines\nthat have something to say about social mechanisms. Such mechanisms\nare also an object of study in voting theory, in auction theory, in\nsocial choice theory, in social epistemology, in mechanism design\ntheory, and in algorithmic game theory. Multi-agent interaction at a\nmore abstract level is studied in artificial intelligence and\ndistributed computing, so all these disciplines have something to say\nabout the formal analysis of social interaction.\n",
+    "toc": [
+        {
+            "#SocProAlg": "1. Social Procedures as Algorithms"
+        },
+        {
+            "#Fai": "2. Fairness"
+        },
+        {
+            "#FaiDiv": "2.1 Fair Division"
+        },
+        {
+            "#CutCakAmoThaTwoPar": "2.2 Cutting a Cake Among More than Two Participants"
+        },
+        {
+            "#SolJud": "2.3 Solomon\u2019s Judgement"
+        },
+        {
+            "#StaMarPro": "3. The Stable Marriage Problem"
+        },
+        {
+            "#GalShaAlg": "3.1 The Gale-Shapley Algorithm"
+        },
+        {
+            "#UniHouAssPro": "3.2 A University Housing Assignment Procedure"
+        },
+        {
+            "#LogCom": "4. The Logic of Communication"
+        },
+        {
+            "#ComDisCom": "4.1 Communication and Distributed Computing"
+        },
+        {
+            "#ComKnoSocPro": "4.2 Common Knowledge and Social Procedures"
+        },
+        {
+            "#StrReaCoo": "5. Strategic Reasoning and Cooperation"
+        },
+        {
+            "#Con": "6. Conclusion"
+        },
+        {
+            "#Bib": "Bibliography"
+        },
+        {
+            "#GenRef": "General References"
+        },
+        {
+            "#Faibib": "Fairness"
+        },
+        {
+            "#StaMarProbib": "The Stable Marriage Problem"
+        },
+        {
+            "#LogCombib": "The Logic of Communication"
+        },
+        {
+            "#StrReaCoobib": "Strategic Reasoning and Cooperation"
+        },
+        {
+            "#Aca": "Academic Tools"
+        },
+        {
+            "#Oth": "Other Internet Resources"
+        },
+        {
+            "#Rel": "Related Entries"
+        }
+    ],
+    "main_text": "\n1. Social Procedures as Algorithms\n\nSocial software cannot be seen as a clearly defined research field on\nits own, but rather an umbrella for certain types of research in\ncomputer science, logic, and game theory. Nevertheless, the social\nsoftware perspective on social procedures and intelligent interaction,\nemphasizing algorithms and information, has already produced a wide\nvariety of important insights. In this article, a number of examples\nwill be discussed and pointers will be given to related discussions in\nphilosophy.\n\nThe prototypical example of an algorithm in\nmathematics (see also entry on\n computability and complexity)\n is Euclid\u2019s recipe for finding the greatest common divisor\n(GCD) of two positive whole numbers \\(A\\) and \\(B\\). The GCD of two\nnumbers is the greatest number that divides both numbers without\nresidue.\n\n\nIf \\(A\\) is larger than \\(B\\), then replace \\(A\\) by \\(A - B\\),\notherwise, if \\(B\\) is larger than \\(A\\), replace \\(B\\) by \\(B - A\\).\nContinue like this until \\(A\\) equals \\(B\\).\n\n\nThe final \\(A = B\\) yields the greatest common divisor of the numbers\n\\(A\\) and \\(B\\) that you started with. For instance, suppose you start\nthe algorithm with \\(A = 20\\), \\(B = 12\\). Then in the first step,\n\\(A\\) gets replaced by \\(20 - 12 = 8\\), so \\(8\\) becomes the new\n\\(A\\). In the second step, \\(B\\) gets replaced by \\(12 - 8 = 4\\), so\n\\(4\\) becomes the new \\(B\\). In the third step, \\(A\\) gets replaced by\n\\(8 - 4 = 4\\), so \\(4\\) becomes the new \\(A\\) and the two numbers\n\\(A\\) and \\(B\\) have become equal. The algorithm yields \\(4\\) as the\nGCD of \\(20\\) and \\(12\\).\n\nEuclid\u2019s recipe is formal, and we can\nanalyze it with formal means. The correctness of Euclid\u2019s\nalgorithm follows from the insight that if you have two numbers \\(A\\)\nand \\(B\\) with \\(A\\) larger than \\(B\\), and you replace \\(A\\) by \\(A -\nB\\), then the set of common divisors of the number pair does not\nchange.\n\nAlgorithms come in many forms and flavors, for example, sequential and\nparallel ones. For interesting introductions to algorithms in computer\nscience, see Harel & Feldman (2004) and Miller & Boxer (2012).\nIn a similar manner as these algorithms, social procedures can be\nanalyzed with the formal tools of logic and theoretical computer\n science.[2]\n\nIt appears that most amenable to a formal approach are those social\nprocedures for which one wants to guarantee that given certain\nstarting conditions, the procedure preserves or creates specific\ndesired properties. Examples are social procedures for fair division\n(Section\n 2),\n matching (Section\n 3),\n communication (Section\n 4).\n Finally, the formal perspective is useful for situations requiring\nparticipants\u2019 strategic reasoning (Section\n 5).\n A common element is that in all these situations, agents\u2019\nknowledge and lack of knowledge of other agents\u2019 mental states\nplay an important role. As a counterpart to the examples in the\ncurrent article, Van Benthem (2018) provides an intriguing overview\nabout the current roles of social perspectives in computer science\nitself, highlighting social agency and information. \n2. Fairness\n\nFormal methods by themselves do not solve philosophical issues, as the\nfollowing tale from Padma (2007)\nillustrates.\n\n\nTwo farmers, Ram and Shyam were eating chapatis. Ram had 3 pieces of\nthe flat, round bread and Shyam had 5. A traveller who looked hungry\nand tired rode up to the two men. Ram and Shyam decided to share their\nchapatis with him. The 3 men stacked the 8 chapatis (like pancakes)\nand cut the stack into 3 equal parts. They shared the pieces equally\nand ate until nothing was left. The traveller, who was a nobleman, was\nso grateful that he gave the two farmers 8 gold coins for his share of\nthe food.\n\nAfter the traveller left, Ram and Shyam wondered how they should share\nthe 8 gold coins. Ram said that there were 8 coins and only 2 people,\nso each person should get an equal share of 4 coins. \u201cBut\nthat\u2019s not fair,\u201d said Shyam, \u201csince I had 5\nchapatis to begin with.\u201d Ram could see his point, but he\ndidn\u2019t really want to give 5 of the coins to Shyam. So he\nsuggested they go see Maulvi, who was very wise. Shyam agreed.\n\nRam and Shyam told the whole story to Maulvi. After thinking for a\nlong time, he said that the fairest way to share the coins was to give\nShyam 7 coins and Ram only 1 coin. Both men were surprised. But when\nthey asked Maulvi to explain his reasoning, they were satisfied that\nit was a fair division of the 8 coins.\n\n\nHere are reasons the participants could have given to explain each\nmentioned division as being fair:\n\n\n\nRam: \u201cIf the traveller hadn\u2019t arrived, we would have\nshared the chapatis equally. So it is only fair\nif we now share the eight coins equally as well.\u201d\n\n\nShyam: \u201cIf the traveller hadn\u2019t arrived, you would have\nbought one chapati from me at the going rate for chapatis. Now that\nthe traveller was so generous, the going rate suddenly went up to one\ngold coin for a chapati. So your chapatis turned out to be worth three\ngold coins and mine five gold coins.\u201d\n\n\nMaulvi: \u201cThe traveller has eaten one third of eight chapatis.\nRam had only three chapatis to start with, and therefore he has eaten\n\\(1/3\\) chapati from Ram and \\(7/3\\) chapatis from Shyam. So it is\nonly fair if Ram gets one coin and Shyam gets seven.\u201d\n\n\nA moral of this could be that there is no obviously correct notion of\nfairness, in this case, and in many cases. Formal analysis always\nstarts from an intuition and can help to turn that intuition into a\nmore precise definition. Then one can check if a given procedure fits\nthe definition; however, if it fits, that does not show that the\ndefinition is right.\n2.1 Fair Division\n\nSocial procedures are as old as the world. Divide and\nchoose (also known as \u201cI cut, you choose\u201d) is\na procedure for two-person fair division of some desirable or\nundesirable heterogeneous good. One person divides the good into what\nshe believes to be equal shares, and the other person chooses. If the\ntwo participants have different value judgements on parts of the\ngoods, it is possible that both participants feel that they received\nmore than 50 percent of the goods. Indeed, let \\(X\\) be a set\nrepresenting the good to be divided. A valuation function \\(V\\) for\n\\(X\\) is a function from \\({{\\cal P}}(X)\\) to \\([0,1]\\) with the\nproperties that \\(V(\\emptyset) = 0\\), \\(V(X) = 1\\), and for all\nsubsets \\(A\\), \\(B\\), it holds that \\(A \\subseteq B \\subseteq X\\)\nimplies \\(V(A) \\leq V(B)\\) (for explanation of notation, see\nsupplement on\n basic set theory).\n Suppose \\(V_m\\) and \\(V_y\\) are functions for my and your valuation\nof the contents of \\(X\\). If \\(V_m\\) and \\(V_y\\) are different, this\nmeans that you and I value some items in \\(X\\) differently. It\nfollows, as was already observed by Steinhaus in 1948, that there\nexists a division that gives both parties more than their due part;\n\u201cthis fact disproves the common opinion that differences in\nestimation make fair division difficult\u201d (Steinhaus\n1948).\n\nIt matters whether the valuations are known to the other party. Such\nknowledge can be used to advantage by the one who cuts. First consider\nthe case that your valuation is unknown to me, and vice versa. Then if\nI cut, the best I can do is pick sets \\(A, B \\subseteq X\\) with \\(A\n\\cap B = \\emptyset\\), \\(A \\cup B = X\\), and \\(V_m(A) = V_m(B)\\). If\nyou choose, you will use \\(V_y\\) to pick the maximum of \\(\\{ V_y(A),\nV_y(B) \\}\\). It follows immediately that cutting guarantees a fair\nshare, but no more than that, while choosing holds a promise for a\nbetter deal. So if you ever get the choice between cutting and\nchoosing in a situation where both parties only know their own\nvaluation, then it is to your advantage to leave the cutting to the\nother person.\n\nHowever, if the valuations are common knowledge (see entry on\n common knowledge),\n the situation is reversed, for then it is more advantageous to take\nthe role of cutter. As cutter, you can attempt to make a division intp\nsets \\(A\\) and \\(B\\) with \\(A\\) slightly more valuable than \\(B\\)\naccording to the valuation of the other party, while \\(B\\) is much\nmore valuable than \\(A\\) according to your own valuation.\n\nThe example shows that issues of knowledge and ignorance, are crucial\nfor analysis of fair division protocols. Epistemic logic (see entry on\n epistemic logic)\n can shed much light on many subtle aspects of knowledge and ignorance\nin social interactions, and in particular in fair division problems;\nfor an interesting cake-cutting experiment showing the importance of\nknowledge and ignorance, see Kyropoulou et al.\n2019. Still, in traditional studies of fair division the role\nof knowledge is not taken into account, as is witnessed by the\ncomprehensive study of \u201ccake cutting algorithms\u201d in Robertson\n& Webb (1998).\n2.2 Cutting a Cake Among More than Two Participants\n\nIn the social choice literature (Brams 2005;\nBrams & Taylor 1996) it is common practice to use cake\ncutting as a metaphor for a division of a single\nheterogeneous good. Dividing a piece of land at\ninheritance would be an example. The cake has different toppings that\ncannot all be cut into pieces with the same composition: it may have\ncandied cherries on top that someone likes but another person abhors,\nand so on. A cake division is simply fair if\neach of \\(n\\) players feels she received at least \\(1/n\\) of the cake,\naccording to her individual valuation of its parts. A procedure may be\nsimply fair without ruling out the possibility of hard feelings. A\ncake division is called envy-free if each person\nfeels that nobody else received a larger piece. A sure sign of a\ndivision being envy-free is that nobody wishes to trade pieces with\nanyone else. It turns out to be very hard to design cake cutting\nprocedures that are both fair and envy-free. The I cut, you\nchoose procedure is fair, and it is envy-free simply\nbecause the rest of the cake is a single piece, so there is no\npossibility for envy. See the entry on\n economics [normative] and economic justice\n for philosophical discussions of envy-freeness.\n\nR. Parikh (2002) analyzes the so-called\nBanach-Knaster algorithm for cake cutting when the cake has to be\ndivided fairly among at least three persons, which goes like this:\n\n\nI cut a piece intended for myself. All others consider it. If nobody\nobjects, I get my piece. If someone raises an objection, she has the\nright to cut off a slice and put that back with the rest of the cake.\nShe then asks if she can have the reduced piece. If nobody objects,\nshe gets it, otherwise someone else takes the knife and reduces the\npiece a bit further, and so on, until someone gets the trimmed piece.\nThen on to the next round, with \\(n-1\\) players. When two players are\nleft, they use the Divide and choose\nalgorithm.\n\n\nParikh\u2019s discussion shows how the methods of theoretical\ncomputer science can be used to argue that the procedure is fair. The\nkey ingredient of the procedure is a loop operation:\n\n\nContinue to trim the piece until there are no further objections about\nthe size.\n\n\nSuppose \\(r\\) stands for the action of trimming a piece of cake and\nputting it back with the main part of the cake, according to the\nBanach-Knaster algorithm, and suppose \\(F(m,k)\\) is the proposition\nthat the main part of the cake is large enough for \\(k\\) people. Then\nsurely \\(F(m,n)\\) holds at the beginning: the whole cake is large\nenough for the whole group to begin with. Moreover, Parikh (1983,\n2002) uses his game logic to prove that\n\\(F(m,k)\\) is invariant under the action \\(r\\): If \\(F(m,k)\\) is true\nbefore \\(r\\), then it will still be true after \\(r\\) has occurred.\nClearly, if one can show that \\(F(m,k)\\) continues to hold through the\nalgorithm, for \\(k\\) running through \\(n, \\ldots, 1\\), then this\nestablishes that the division is\n fair.[3]\n2.3 Solomon\u2019s Judgement\n\nA variation on Divide and choose was played by\nKing Solomon in the famous Judgement of Solomon, in a dispute among\ntwo women who both claimed to be the mother of a child. The full story\nis in 1 Kings 3:16\u201328. Two women who lived in the same house\nboth had an infant son. One of the women claimed that the other woman\nhad stolen her child, after accidentally smothering her own son during\nsleep. The other woman denied this and reversed the charge. After\nhearing their stories, King Solomon called for a sword and declared\nthat there was only one fair solution: cut the living child in two and\ngive both women half of it. Upon hearing this, the true mother cried\nout that she was willing to give up the child if it could be spared,\nwhile the fake mother agreed with the judgement. This behaviour\nrevealed to Solomon who was the real mother, and her child was given\nback to her.\n\nThis procedure is not repeatable. As the Bible story puts it:\n\n\nAnd all Israel heard of the judgment which the king had judged; and\nthey feared the king; for they saw that the wisdom of God was in him,\nto do justice.\n\n\nObviously, in a second similar dispute, both women would exclaim\n\u201cGive it to her, but let it live!\u201d\n\nSolomon\u2019s handling of the situation can be turned into a social\nprocedure that is repeatable, as follows. Solomon does not call for a\nsword, but instead explains to the two women the following procedure.\nFirst he is going to ask the first woman if she is willing to give up\nthe child. If the answer is \u201cyes\u201d, the dispute is\nresolved, with no further questions asked. Otherwise he will ask the\nother woman if she is willing to give up the child. Again, if the\nanswer is \u201cyes\u201d the dispute is resolved. If they both\nrefuse, then the child is his, and then he will allow one of the women\nto buy it back, at a price that is to be determined as follows. They\nwill both write an amount of money on a sheet of paper, without their\nnames. If the two bids are \\(A\\) and \\(B\\), then the price of the\nchild is set at \\(\\frac{A + B}{2}\\), and fate will determine which\nwoman is going to get the child at that price, where the other woman\nhas to pay a small fine. If the two women are rational, one of them\nwill give up the child when being first asked (see Moore\n1992 and Pauly 2005; for philosophical\ndiscussions of rationality, see the entries on\n practical reason\n &\n game theory and ethics).\n\nBoth Moore (1992) and Pauly (2005)\ndiscuss the importance of reasoning\nabout common knowledge and ignorance in the King Solomon cases. For\nexample, King Solomon is ignorant of who is the real mother, but both\nwomen commonly know from the start who is the true mother, and that\nthe true mother will therefore bid much higher than the other one.\nThis makes the procedure safe. Again, epistemic logic and in\nparticular common knowledge help to shed light on a tricky social\nprocedure. For a more traditionally philosophical introduction to the\nfair division problem, including more extensive explanations of\nfairness, manipulability and envy-freeness, see the entry on\n economics [normative] and economic justice.\n\nThe next section shows that the perspective of social software can\nalso shed light on social matching problems. These range from\nmarriages to the assignment of resident doctors to hospitals, college\nadmission procedures, and the assignment of students to housing.\n3. The Stable Marriage Problem\n\nSuppose equal sets of men and women are given, all of them seeking to\nmarry someone of the opposite gender, and each man has listed his\npreferences for the women by means of a strict ordering, and similarly\nfor each woman. A stable marriage match is a\none-to-one mapping between the men and women with the property that if\na man prefers another woman over his own wife, then that woman does\nnot prefer him to her own husband, and if a\nwoman prefers another man over her own husband, then that man does\nnot prefer her to his own wife.\n3.1 The Gale-Shapley Algorithm\n\nThe computer scientists Gale and Shapley proved that stable matchings\nalways exist, and gave an algorithm for finding such matchings, the\nso-called Gale-Shapley algorithm (Gale &\nShapley 1962):\n\n\nInitially, all men and all women are free (unengaged).\n\nNext, in a number of rounds, each free man proposes to the\nmost-preferred woman to whom he has not yet proposed and ticks her off\nfrom his list. If the woman is free, she accepts, and they become\nengaged. If the woman is not free, she compares the proponent to her\ncurrent fianc\u00e9. If she likes him better, she dumps the\nfianc\u00e9 who becomes free again, and the proponent and his woman\nof choice become engaged.\n\nThis goes on until all men and women are engaged.\n\n\nAs an example, suppose that there are three men \\(a, b, c\\) and three\nwomen \\(d, e, f\\), and the lists of preferences are as follows (with\nthe most preferred one first in the list): \\(a: edf\\), \\(b: {\\it\nfed}\\), \\(c: {\\it dfe}\\), \\(d: {\\it abc}\\), \\(e: {\\it cda}\\), \\(g:\n{\\it acb}\\). So \\(a: {\\it edf}\\) means that \\(a\\) prefers \\(e\\) to\n\\(d\\) and \\(d\\) to \\(f\\). It is assumed that preferences are\ntransitive, so \\(a\\) also prefers \\(e\\) to \\(f\\).\n\nAn example of a stable match for this situation is represented as\nthree pairs \\((a,e)\\), \\((b,f)\\), \\((c,d)\\). Note that woman \\(d\\)\nends up with the man that is at the bottom of her list. But this match\nis still stable, for although \\(c\\) is willing to swap her husband for\nany of the other two men, these two candidates will not agree, for\nthey both happen to be married to the woman who is on the top of their\nown list.\n\nTo check that the Gale-Shapley algorithm always produces stable\nmatchings, we can proceed as follows. Obviously, the situation where\nno-one is engaged is stable.\n\nWhat does it mean for \\(E\\), an \u201cengagement\u201d mapping, to\nbe stable on the set of women \\(W\\) and the set of men \\(M\\)? Let us\nuse \\(m >_w m'\\) for \u201c\\(w\\) prefers \\(m\\) over \\(m'\\)\u201d\n(so bigger is better).\n\n(1)\nFor all \\((m,w) \\in\nE\\): if there is \\(w'\\) with \\(w' >_m w\\) then there is no \\(m'\\)\nwith \\((m',w') \\in E\\) and \\(m >_{w'} m'\\);\n(2)\nFor all \\((m,w) \\in\nE\\): if there is \\(m'\\) with \\(m' >_w m\\) then there is no \\(w'\\)\nwith \\((m',w') \\in E\\) and \\(w >_{m'} w'\\). \n\n\nWhat does it mean for a man to be free?\n\n(3)\nThe set of free men should equal the set of all men minus the men\nthat are engaged.\n\n\nNext, inspect what happens in a single step in the algorithm. The\nprecondition for the step is that there is at least one free man \\(m\\)\nleft. Such a free man \\(m\\) proposes to the highest woman \\(w\\) on his\nlist to whom he has not yet proposed.\n\nThere are two cases. If \\(w\\) is free, \\(w\\) accepts the proposal, and\nthey become engaged. Is the new set of engaged pairs stable? We only\nhave to check for the new pair \\((w,m)\\).\n\n\n\nSuppose that there is a free \\(w'\\) with \\(w' >_m w\\). This cannot\nbe, for \\(w\\) is at the top of \\(m\\)'s list.\n\n\nSuppose there is \\(m'\\) with \\(m' >_w m\\). Then if \\(m'\\) is\nengaged, let us say to \\(w'\\), this must mean that not \\(w >_{m'}\nw'\\). For otherwise \\(m'\\) would have proposed to \\(w\\) instead of to\n\\(w'\\).\n\n\nThe new list of free men equals the old list, minus \\(m\\). This is\ncorrect, for \\(m\\) just got engaged.\n\n\nNow the other case: suppose that \\(w\\) is already engaged. There are\ntwo subcases. In case \\(w\\) prefers her own current fianc\u00e9,\nnothing happens. The resulting list of engaged pairs is still stable.\nThe list of free men remains the same, for \\(m\\) proposed and got\nrejected.\n\nIn case \\(w\\) prefers \\(m\\) to her own fianc\u00e9 \\(m'\\), she\nswaps: \\((m,w)\\) replaces \\((m',w)\\) in the set of engaged pairs.\nAgain, it is easy to see that the resulting list of engaged pairs is\nstable. Man \\(m\\) gets replaced by \\(m'\\) in the set of free men. This\nis also correct.\n\nNote that the Gale-Shapley matching algorithm is hugely favourable to\nthe party that is doing the proposing. The proposing party gets a\nchance to make proposals to any candidate, in order of preference. But\nat the start of the procedure the receiving party has to say\n\u201cyes\u201d to any proposal! The result of swapping the roles of\nthe men and the women in the algorithm will also compute a stable\nmatch, but one that is more advantageous to the women. \n\nThe Gale-Shapley procedure runs in time quadratic in the number of men\nand women (see, e.g., Cechl\u00e9rov\u00e1 et al. 2005). Pini et\nal. (2011) show how participants can easily manipulate the outcome of\nthe procedure by misrepresenting their true preferences. Fortunately,\nPini et al. also present an alternative procedure for which\nmanipulation is hard, in that coming up with an individually\nprofitable misrepresentation of one\u2019s preferences is a\ncomputationally complex task.\n\nThe Gale-Shapley algorithm has many important applications, also\noutside of the area of marriage brokering; Gale and Shapley themselves\ndiscuss college admission procedures (1962).\nThe next subsection presents another\napplication.\n3.2 A University Housing Assignment Procedure\n\nUsing the perspective of social software, Parikh and Pauly (2012)\ninvestigate a variant of the\nGale-Shapley algorithm that is used in the Stanford Housing Draw to\nassign students to rooms. The situation is more complex than in the\nmarriage setting, because students do not give a complete order on all\nhouses, but only on 8 of them; moreover, they may choose to enter the\nDraw in groups. In the housing context, the students turn out to have\nan incentive to honestly submit their true preferences: the draw is\nnon-manipulable for them. However, in theory\nthey could still strategize about choosing the subset of 8 houses on\nwhich they submit their preferences.\n\nThe issue of knowledge is interesting in this case. Even though the\nalgorithm can be found on the Stanford webpages, most students and\nadministrators do not fully understand how it works. Therefore, the\nStanford Housing Draw cannot be assumed as common knowledge among the\nstudents. An interesting phenomenon seems to occur: even while\nadmitting not to understand the algorithm, most students would say\nthat they believe it to be fair (Parikh &\nPauly 2012).\n4. The Logic of Communication\n\nCommunication protocols are important in distributed computing:\ncomputing with distributed systems, where a distributed system is a\nset of computers that are connected through a communication network.\nCommunication protocols are also interesting from a philosophical\nperspective, especially in the context of discussions of the value of\nprivacy (see entries on\n privacy\n and\n computing and moral responsibility).\n The formal approach can help in answering philosophical questions\nsuch as \u201cDoes more security automatically lead to less\nprivacy?\u201d.\n4.1 Communication and Distributed Computing\n\nIn the following example, the inspiration does not only flow from\nsocial problems to formal solutions, but also the other way, from\nsuccessful social practices to formal procedures. Many algorithms for\ndistributed computing are related to social protocols for\ncommunication in everyday life. An example is the use of a\n\u201ctalking stick\u201d to regulate discussion and decision making\nin a group of peers, with the rules that the talking stick gets passed\naround and only the person who is holding the stick is allowed to talk\n(Nerburn 1999).\n\nA computer communication protocol based on this social procedure is\nthe token ring protocol. A token ring in\ndistributed computing is a network where each computer is connected to\nexactly two other computers in such a way that each computer is\nreachable in the network, and where a single \u201ctoken\u201d\ncirculates around the ring-shaped network. Communication can only be\ninitiated by the current owner of the token.\n\nSometimes the token gets lost through computer or network failure. In\nsuch cases the token has to be regenerated, with a guarantee that only\none computer has the token. This problem of regenerating the token in\na token ring is called the leader election\nproblem. Here is an algorithm for it:\n\n\nAssume that communication takes place clockwise, and each computer can\ndistinguish its clockwise neighbour from its counterclockwise\nneighbour. Assume that all computers have different identifiers\n(positive whole numbers) and each computer knows its identifier.\n\nEach computer sends its identifier around the ring. When a computer\n\\(c\\) receives an identifier, \\(c\\) compares it to its own. If the\nidentifier is greater than its own, \\(c\\) passes it on. If it is less\nthan its own, \\(c\\) discards it. If it is equal to its own, \\(c\\)\ndeclares itself to be the leader.\n\n\nIt is not hard to see that this guarantees the computer with the\nhighest identifier \\(i_{\\text{max}}\\) to become the leader (see Lynch\n1996). No assumptions need to be made\nabout the number of computers in the ring, nor about any computer\nknowing anything about the size of the ring or the identifiers of the\nother computers. A next stage of the protocol could be for the leader\nto send around a request to register as non-leader and halt.\n\nOne further level of abstraction is from distributed computers or\nprocesses to interacting intelligent agents, or multi-agent systems.\nThese agents can be computers, robots, humans, teams of humans, or\nsome mix of these. It is commonly assumed that the agents have a\ndegree of autonomy, that the agents have a restricted local view of\nthe system as a whole, and that there is no designated controller of\nthe whole system (see Wooldridge 2002 [2009]).\n4.2 Common Knowledge and Social Procedures\n\nMany social procedures are designed to create common knowledge (Lewis\n1969; van Ditmarsch et al. 2009; and entry on\n common knowledge).\n The old-fashioned ritual that takes place when you withdraw a large\namount of money from your bank account and have it paid out to you in\ncash by the cashier is an example.\n\nHow and whether common knowledge can be achieved depends on available\ncommunication facilities. Public announcement or publicly observable\nritual (the cashier ritual mentioned above) can create common\nknowledge. But, as Halpern and Moses (1984)\nproved, message exchange in a\ndistributed environment, where there is no guarantee that messages get\ndelivered, cannot. Halpern and Moses use the example of two generals\nwho are planning a coordinated attack on a city. The generals are on\ntwo hills on opposite sides of the city, each with their own army, and\nthey know that they can only succeed in capturing the city if their\ntwo armies attack at the same time. But the valley that separates the\ntwo hills is in enemy hands, and any messengers that are sent from one\narmy base to the other run a severe risk to get captured. The generals\nhave agreed on a joint attack, but still have to settle the time. So\nthe generals start sending messages, for example, \u201cLet\u2019s\nattack at 9:00 AM\u201d. But they cannot be sure that the messengers\nsucceed in delivering their message. And if they get through, there is\nno guarantee that the message of acknowledgement will get delivered.\nAnd so on.\n\nEven if common knowledge is sometimes hard to achieve in practice, it\nserves as necessary presumption in regulating society. Roman lawgivers\nfound out long ago that if citizens within their jurisdiction could\nplead innocence because of being unaware of the law, no offender could\never get convicted. So they invented principles like\nIgnorantia legis neminem excusat,\n\u201cignorance of the law excuses no one\u201d. Societies that\nabide by the rule of law have to be organized in such a way that\ncitizens in principle are in a position to know\nthe law. The laws have to be properly published and distributed, for\nexample, by being printed in a government gazette to which every\ncitizen has access.\n\nIn his book \u201cRational Ritual\u201d (2001),\nMichael Suk-Young Chwe points out the\nimportance of the size of groups for which\ncommon knowledge gets established. A brand name that is common\nknowledge in a large group is worth a lot of money. Chwe analyzes the\nexample of advertisements broadcasted during the American football\nSuper Bowl. He compares the enormous cost of making something common\nknowledge by means of such advertisements to the obvious benefits.\nPart of the benefit is in the fact that the advertisements create\ncommon knowledge. An important consideration when deciding to buy a\nsmartphone of a particular brand, for example, is the knowledge that\nothers are going to buy the same model too.\n\nOf course in many social situations, you may want to prevent\ncommon knowledge from arising, for example, if you want to keep a\nsecret from certain others. There are also more interesting cases\nwhere everybody knows some fact, for example that a particular country\npossesses nuclear weapons, but where it would lead to political\nproblems to make this fact common knowledge by making a public\nannouncement. For a number of such social situations where maintaining\nprivacy and ignorance are crucial, see van Eijck and Verbrugge (2009).\nAn interesting recent development is the study of dynamic-epistemic\nlogic-based epistemic planning, which enables us to\nsynthesize communication protocols in order to create certain exact\nconfigurations of levels of higher-order knowledge within a group\n(Bolander and Andersen 2011, L\u00f6we, Pacuit, and Witzel 2011).\n5. Strategic Reasoning and Cooperation\n\nThe large field of game theory is extensively explained in other\nlemmas in this encyclopedia (see among others the entry on\n game theory).\n This field of research has been very active since the appearance of\nthe seminal book (Von Neumann and Morgenstern 1944). Similarly, social\nchoice theory and in particular voting theory (see entries on\n social choice theory\n and\n voting methods)\n were already thriving fields of research long before the term social\nsoftware came along.\n\nIt is useful to investigate how formal methods and an algorithmic\nperspective can help solve societal problems. For example, in the case\nof the famous prisoner\u2019s dilemma (see entry on\n prisoner\u2019s dilemma)\n it is interesting to try to design policies that make cheating the\nother agent less profitable by penalizing it. Notice that this\n\u201csocial software engineering\u201d takes place at the\nmeta-level, on top of the level of the prisoners choosing their\nstrategies (van Eijck 2015).\n\nA related recent trend in game theory that is relevant for social\nsoftware, is to step away from solution concepts such as the Nash\nequilibrium and instead to focus on the process of rational\ndeliberation: the \u201ctheory of play\u201d (see van Benthem,\nPacuit and Roy, 2011, as well as the entry\n logics for analyzing games).\n This type of research delineates both the normative principles\nguiding the players\u2019 strategic reasoning, and the psychological\nphenomena explaining the differences between predicted and observed\nbehavior in games (Camerer 2003; Ghosh and Verbrugge 2018; Pacuit\n2015; Meijering et al. 2012, 2014; Top et al. 2018).\n\nIn Section 4.2 we briefly discussed the role of the study of knowledge\nand belief when analyzing social procedures. In this vein, the field\nof epistemic game theory focuses on agents\u2019 beliefs about other\nagents\u2019 strategies and those agents\u2019 beliefs about other\nagents\u2019 strategies, and so on, up to the idealized case of\ncommon knowledge among a group of agents that they are all rational\n(see the entry on\n epistemic foundations of game theory;\n Perea 2012; Brandenburger 2014).\n\nIt turns out that in voting theory in particular, it is useful to\ndesign a logic to explicitly model the knowledge that agents bring to\nbear when they are voting. It is especially interesting to model what\nhappens in a group when agents vote strategically by misrepresenting\ntheir own preferences in order to manipulate the outcome (van Eijck\n2015; van Ditmarsch et al. 2012).\n\nIn recent years in the research area of multi-agent systems, formal\napproaches to social procedures have also been used to help design\nactual software, for example for cooperative problem solving in teams,\ncoalition formation, knowledge fusion, auctions, and negotiations\namong software agents (Bulling et al. 2015; Chalkiadakis et al. 2011;\nDunin-K\u0119plicz and Verbrugge 2010; Pauly 2002; Shoham and\nLeyton-Brown 2009; Vazirani et al. 2007). This literature is mostly\nnormative in nature.\n\nIn contrast, another fascinating area of research, evolutionary game\ntheory (see entry on\n evolutionary game theory),\n investigates how features like altruism, social norms, moral behavior\nand cooperation could actually have evolved. This area combines both\nnormative and descriptive work (Axelrod 1984; Bowles and Gintis 2011;\nSigmund 2010). As a particular social software contribution to this\narea, G\u00e4rdenfors (2012) characterized how much cognition and\ncommunication are required for several kinds of cooperation, from\nsimple flocking behavior, through reciprocal altruism\n(\u201cI\u2019ll scratch your back if you scratch mine\u201d), up\nto fully fledged teamwork.\n6. Conclusion\n\nIn conclusion, the formal perspective on social procedures and\nintelligent interaction, which emphasizes algorithms and information,\nhas produced a wide variety of important insights. It has also led to\ninteresting philosophical discussions. The main challenge for the\nfuture appears to be to unify this currently relatively scattered\nfield, in which many contributors do not seem to be aware of relevant\nwork in other subfields.\n",
+    "bibliography": {
+        "categories": [
+            "<a id=\"GenRef\">General References</a>",
+            "<a id=\"Faibib\">Fairness</a>",
+            "<a id=\"StaMarProbib\">The Stable Marriage Problem</a>",
+            "<a id=\"LogCombib\">The Logic of Communication</a>",
+            "<a id=\"StrReaCoobib\">Strategic Reasoning and Cooperation</a>"
+        ],
+        "cat_ref_text": {
+            "<a id=\"GenRef\">General References</a>": [
+                "</h3>\n<ul class=\"hanging\">",
+                "Ba\u015fkent, C., L.S. Moss, and R. Ramanujam, (eds.), 2017,\n<em>Rohit Parikh on Logic, Language and Society</em> (Outstanding\nContributions to Logic: Volume 11), Berlin: Springer.",
+                "Ba\u015fkent, C., 2017, \u201cA Non-Classical Logical Approach to\nSocial Software\u201d, in Ba\u015fkent, Moss, &amp; Ramanujam 2017,\npp. 91\u2013110.",
+                "van Benthem, J., 2018, \u201cComputation as Social Agency: What,\nHow and Who\u201d, <em>Information and Computation</em>, 261:\n519\u2013535.",
+                "Eijck, J. van, and Ph. Elsas, 2017, \u201cWhat Is Money?\u201d,\nin Ba\u015fkent, Moss, &amp; Ramanujam 2017, pp. 67\u201376.",
+                "Eijck, J. van, and R. Verbrugge (eds.), 2009, <em>Discourses on\nSocial Software</em> (Texts in Logic and Games: Volume 5), Amsterdam:\nAmsterdam University Press.",
+                "\u2013\u2013\u2013 (eds.), 2012, <em>Games, Actions and Social\nSoftware: Multidisciplinary Aspects</em> (Lecture Notes in Computer\nScience: Volume 7010), Berlin: Springer.",
+                "Harel, D., and Y.A. Feldman, 2004, <em>Algorithmics: The Spirit of\nComputing</em>, London: Pearson Education.",
+                "Miller, R., and L. Boxer, 2012, <em>Algorithms Sequential &amp;\nParallel: A Unified Approach</em>, Boston, MA: Cengage Learning.",
+                "Pacuit, E., 2005, <em>Topics in Social Software: Information in\nStrategic Situations</em>, Ph.D. thesis, New York: City University of\nNew York.",
+                "Parikh, R., 2002, \u201cSocial Software\u201d,\n<em>Synthese</em>, 132: 187\u2013211.",
+                "\u2013\u2013\u2013, 2017, \u201cIs There a Church-Turing\nThesis for Social Algorithms?\u201d, in A. Bokulich and J. Floyd\n(eds.), <em>Philosophical Explorations of the Legacy of Alan\nTuring</em>, (Boston Studies in the Philosophy of Science, Volume\n324), Berlin: Springer, pp. 339\u2013357.",
+                "Pauly, M., 2001, <em>Logic for Social Software</em>, Ph.D. thesis,\nAmsterdam: ILLC.\n</ul>\n<h3>"
+            ],
+            "<a id=\"Faibib\">Fairness</a>": [
+                "</h3>\n<ul class=\"hanging\">",
+                "Brams, S., 2005, \u201cFair Division\u201d, in B.R. Weingast and\nD. Witteman (eds.), <em>Oxford Handbook of Political Economy</em>,\nOxford: Oxford University Press, pp. 425\u2013437.",
+                "Brams, S., and A. Taylor, 1996, <em>Fair Division: From\nCake-Cutting to Dispute-Resolution</em>, Cambridge: Cambridge\nUniversity Press.",
+                "Kyropoulou, M., J. Ortega, and E. Segal-Halevi, 2019, \u201cFair\nCake-Cutting in Practice\u201d, in <em>Proceedings of the 2019 ACM\nConference on Economics and Computation</em>, ACM Press, pp.\n547\u2013548.",
+                "Moore, J., 1992, \u201cImplementation, Contracts, and\nRenegotiation in Environments with Complete Information\u201d, in\nJ.-J Laffont (ed.), <em>Advances in Economic Theory \u2014\n6<sup>th</sup> World Congress</em> (Volume 1), Cambridge: Cambridge\nUniversity Press.",
+                "Padma, T., 2007, <em>Mathematwist: Number Tales from Around the\nWorld</em>, Chennai: Tulika Publishers.",
+                "Parikh, R., 1983, \u201cPropositional Game Logic\u201d, in\n<em>24<sup>th</sup> Annual Symposium on Foundations of Computer\nScience</em>, Washington, DC: IEEE Computer Society, pp.\n195\u2013200.",
+                "Pauly, M., 2005, \u201cChanging the Rules of Play\u201d,\n<em>Topoi</em>, 24(2): 209\u2013222.",
+                "Robertson, J., and W. Webb, 1998, <em>Cake-Cutting Algorithms: Be\nFair If You Can</em>, Boca Raton, FL: A.K. Peters.",
+                "Steinhaus, H., 1948, \u201cThe Problem of Fair Division\u201d,\n<em>Econometrica</em>, 16: 101\u2013104.\n</ul>\n<h3>"
+            ],
+            "<a id=\"StaMarProbib\">The Stable Marriage Problem</a>": [
+                "</h3>\n<ul class=\"hanging\">",
+                "Gale, D., and L. Shapley, L., 1962, \u201cCollege Admissions and\nthe Stability of Marriage, <em>American Mathematical Monthly</em>, 69:\n9\u201315.",
+                "Cechl\u00e9rov\u00e1, K., and D.F. Manlove, 2005, \u201cThe\nExchange-Stable Marriage Problem\u201d, <em>Discrete Applied\nMathematics</em>, 152(1\u20133): 109\u2013122.",
+                "Parikh, R., and M. Pauly, 2012, \u201cWhat is Social\nSoftware?\u201d, in van Eijck and Verbrugge 2012: 3\u201314.",
+                "Pini, M. S., F. Rossi, K.B. Venable, and T. Walsh, 2011,\n\u201cManipulation complexity and gender neutrality in stable\nmarriage procedures\u201d. <em>Autonomous Agents and Multi-Agent\nSystems</em>, 22(1): 183\u2013199.\n</ul>\n<h3>"
+            ],
+            "<a id=\"LogCombib\">The Logic of Communication</a>": [
+                "</h3>\n<ul class=\"hanging\">",
+                "Bolander, T., and M.B. Andersen, 2011, \u201cEpistemic Planning\nfor Single-and Multi-Agent Systems\u201d, <em>Journal of Applied\nNon-Classical Logics</em>, 21(1): 9\u201334.",
+                "Chwe, M. S.-Y., 2001, <em>Rational Ritual</em>, Princeton and\nOxford: Princeton University Press.",
+                "van Ditmarsch, H., J. van Eijck, and R. Verbrugge, 2009,\n\u201cCommon Knowledge and Common Belief\u201d, in J. van Eijck and\nR. Verbrugge (eds.), <em>Discourses on Social Software</em>, (Texts in\nLogic and Games), Amsterdam: Amsterdam University Press, pp.\n99\u2013122.",
+                "van Eijck, J., and R. Verbrugge, 2009, \u201cEating from the Tree\nof Ignorance\u201d, in J. van Eijck and R. Verbrugge (eds.),\n<em>Discourses on Social Software</em> (Texts in Logic and Games),\nAmsterdam: Amsterdam University Press, pp. 184\u2013198.",
+                "Halpern, J., and Y. Moses, 1984, \u201cKnowledge and Common\nKnowledge in a Distributed Environment\u201d, in <em>Proceedings of\nthe 3rd ACM Symposium on Principles of Distributed Computing\n(PODS)</em>, pp. 50\u201361; revised, <em>Journal of the ACM</em>,\n37/3 (1990): 549\u2013587.",
+                "Lewis, D., 1969, <em>Convention: A Philosophical Study</em>,\nCambridge, MA: Harvard University Press.",
+                "L\u00f6we, B., E. Pacuit, and A. Witzel, 2011, \u201cDEL Planning\nand Some Tractable Cases\u201d, in Proceedings International Workshop\non Logic, Rationality and Interaction (LORI), Berlin, Heidelberg:\nSpringer, pp. 179\u2013192.",
+                "Lynch, N., 1996, <em>Distributed Algorithms</em>, San Mateo, CA:\nMorgan Kaufmann.",
+                "Nerburn, K., 1999, <em>The Wisdom of the Native Americans</em>,\nNovato, CA: New World Library.",
+                "Wooldridge, M., 2002 [2009], <em>An Introduction to Multi-Agent\nSystems</em>, first edition, Chichester: John Wiley and Sons; second\nedition 2009.\n</ul>\n<h3>"
+            ],
+            "<a id=\"StrReaCoobib\">Strategic Reasoning and Cooperation</a>": [
+                "</h3>\n<ul class=\"hanging\">",
+                "Axelrod, R., 1984, <em>The Evolution of Cooperation</em>, New\nYork: Basic Books.",
+                "Benthem, J. van, S. Ghosh, and R. Verbrugge (eds.), 2015,\n<em>Models of Strategic Reasoning: Logics, Games, and Communities</em>\n(FoLLI Publications on Logic, Language and Information, LNCS 8972),\nBerlin: Springer.",
+                "Benthem, J. van, E. Pacuit, and O. Roy, 2011, \u201cToward a\nTheory of Play: A Logical Perspective on Games and Interaction\u201d,\n<em>Games</em>, 2(1): 52\u201386.",
+                "Bowles, S., and H. Gintis, 2011, <em>A Cooperative Species: Human\nReciprocity and its Evolution</em>, Princeton and Oxford: Princeton\nUniversity Press.",
+                "Brandenburger, A., 2014, <em>The Language of Game Theory: Putting\nEpistemics into the Mathematics of Games</em>, Singapore: World\nScientific.",
+                "Bulling, N., and V. Goranko, 2015, \u201cLogics for Reasoning\nAbout Strategic Abiliies in Multi-Player Games\u201d, in van Benthem,\nGhosh, &amp; Verbrugge 2015: 93\u2013136.",
+                "Camerer, C.F., 2003, <em>Behavioral Game Theory: Experiments on\nStrategic Interaction</em>, Princeton: Princeton University\nPress.",
+                "Chalkiadakis, G., E. Elkind, and M. Wooldridge, 2011,\n<em>Computational Aspects of Cooperative Game Theory</em> (Synthesis\nLectures on Artificial Intelligence and Machine Learning: Volume 5),\nSan Rafael, CA: Morgan and Claypool Publishers.",
+                "Cin\u00e1, G., and U. Endriss, 2016, \u201cProving Classical\nTheorems of Social Choice Theory in Modal Logic\u201d, <em>Autonomous\nAgents and Multi-Agent Systems</em>, 30(5): 963\u2013989.",
+                "Ditmarsch, H. van, J. Lang, and A. Saffidine, 2012,\n\u201cStrategic Voting and the Logic of Knowledge\u201d, in\n<em>Proceedings of the 11th International Conference on Autonomous\nAgents and Multiagent Systems (AAMAS\u201912)</em>, vol. 3, pp.\n1247\u20131248.",
+                "Dunin-K\u0119plicz, B., and R. Verbrugge, 2010, <em>Teamwork in\nMulti-Agent Systems: A Formal Approach</em>, Chichester: Wiley.",
+                "Eijck, J. van, 2015, \u201cStrategies in Social Software\u201d,\nin van Benthem, Ghosh, &amp; Verbrugge 2015: 292\u2013317.",
+                "G\u00e4rdenfors, P., 2012, \u201cThe Cognitive and Communicative\nDemands of Cooperation\u201d, in van Eijck and Verbrugge 2012:\n164\u2013183.",
+                "Ghosh, S., and R. Verbrugge, 2018, \u201cStudying Strategies and\nTypes of Players: Experiments, Logics and Cognitive Models\u201d,\n<em>Synthese</em>, 195(10): 4265\u20134307.",
+                "Gr\u00e4del, E., W. Thomas, and T. Wilke (eds.), 2002,\n<em>Automata Logics, and Infinite Games</em>, (Lecture Notes in\nComputer Science 2500), Berlin, Heidelberg: Springer.",
+                "Klein, D., and E. Pacuit, 2017, \u201cFocusing on\nCampaigns\u201d, in Ba\u015fkent, Moss, &amp; Ramanujam 2017, pp.\n77\u201390.",
+                "Meijering, B., H. van Rijn, N. Taatgen, and R. Verbrugge,\n2012,\u201cWhat Eye Movements Can Tell about Theory of Mind in a\nStrategic Game\u201d, <em>PLoS ONE</em>, 7(9), e45961,\ndoi:10.1371/journal.pone.0045961",
+                "Meijering, B., N. Taatgen, H. van Rijn, and R. Verbrugge, 2014,\n\u201cModeling Inference of Mental States: As Simple as Possible, as\nComplex as Necessary\u201c, <em>Interaction Studies</em>, 15(3):\n455\u2013477.",
+                "Pacuit, E., 2015, \u201cStrategic Reasoning in Games\u201d, in\nvan Benthem, Ghosh, &amp; Verbrugge 2015: 3\u201333.",
+                "Pauly, M., 2002, \u201cA Modal Logic for Coalitional Power in\nGames\u201d, <em>Journal of Logic and Computation</em>, 12:\n149\u2013166.",
+                "Perea, A., 2012, <em> Epistemic Game Theory: Reasoning and\nChoice</em>, Cambridge: Cambridge University Press.",
+                "Shoham, Y., and K. Leyton-Brown, 2009, <em>Multiagent Systems:\nAlgorithmic, Game-Theoretic and Logical Foundations</em>, Cambridge:\nCambridge University Press.",
+                "Sigmund, K., 2010, <em>The Calculus of Selfishness</em>,\n(Princeton Series in Theoretical and Computational Biology), Princeton\nand Oxford: Princeton University Press.",
+                "Top, J., R. Verbrugge, and S. Ghosh, 2018, \u201cAn Automated\nMethod for Building Cognitive Models for Turn-Based Games from a\nStrategy Logic\u201d, <em>Games</em>, 9(3),44;\ndoi:10.3390/g9030044",
+                "Vazirani, V.V., N. Nisan, T. Roughgarden, and E. Tardos (eds.),\n2007, <em>Algorithmic Game Theory</em>, Cambridge: Cambridge\nUniversity Press.",
+                "Von Neumann, J., and O. Morgenstern, 1944, <em>Theory of Games and\nEconomic Behavior</em>, Chichester: Wiley.\n</ul>\n</div>"
+            ]
+        },
+        "raw_text": "<div id=\"bibliography\">\n<h2><a id=\"Bib\">Bibliography</a></h2>\n<h3><a id=\"GenRef\">General References</a></h3>\n<ul class=\"hanging\">\n<li>Ba\u015fkent, C., L.S. Moss, and R. Ramanujam, (eds.), 2017,\n<em>Rohit Parikh on Logic, Language and Society</em> (Outstanding\nContributions to Logic: Volume 11), Berlin: Springer.</li>\n<li>Ba\u015fkent, C., 2017, \u201cA Non-Classical Logical Approach to\nSocial Software\u201d, in Ba\u015fkent, Moss, &amp; Ramanujam 2017,\npp. 91\u2013110. </li>\n<li>van Benthem, J., 2018, \u201cComputation as Social Agency: What,\nHow and Who\u201d, <em>Information and Computation</em>, 261:\n519\u2013535.</li>\n<li>Eijck, J. van, and Ph. Elsas, 2017, \u201cWhat Is Money?\u201d,\nin Ba\u015fkent, Moss, &amp; Ramanujam 2017, pp. 67\u201376. </li>\n<li>Eijck, J. van, and R. Verbrugge (eds.), 2009, <em>Discourses on\nSocial Software</em> (Texts in Logic and Games: Volume 5), Amsterdam:\nAmsterdam University Press.</li>\n<li>\u2013\u2013\u2013 (eds.), 2012, <em>Games, Actions and Social\nSoftware: Multidisciplinary Aspects</em> (Lecture Notes in Computer\nScience: Volume 7010), Berlin: Springer.</li>\n<li>Harel, D., and Y.A. Feldman, 2004, <em>Algorithmics: The Spirit of\nComputing</em>, London: Pearson Education.</li>\n<li>Miller, R., and L. Boxer, 2012, <em>Algorithms Sequential &amp;\nParallel: A Unified Approach</em>, Boston, MA: Cengage Learning.</li>\n<li>Pacuit, E., 2005, <em>Topics in Social Software: Information in\nStrategic Situations</em>, Ph.D. thesis, New York: City University of\nNew York.</li>\n<li>Parikh, R., 2002, \u201cSocial Software\u201d,\n<em>Synthese</em>, 132: 187\u2013211.</li>\n<li>\u2013\u2013\u2013, 2017, \u201cIs There a Church-Turing\nThesis for Social Algorithms?\u201d, in A. Bokulich and J. Floyd\n(eds.), <em>Philosophical Explorations of the Legacy of Alan\nTuring</em>, (Boston Studies in the Philosophy of Science, Volume\n324), Berlin: Springer, pp. 339\u2013357.</li>\n<li>Pauly, M., 2001, <em>Logic for Social Software</em>, Ph.D. thesis,\nAmsterdam: ILLC.</li>\n</ul>\n<h3><a id=\"Faibib\">Fairness</a></h3>\n<ul class=\"hanging\">\n<li>Brams, S., 2005, \u201cFair Division\u201d, in B.R. Weingast and\nD. Witteman (eds.), <em>Oxford Handbook of Political Economy</em>,\nOxford: Oxford University Press, pp. 425\u2013437.</li>\n<li>Brams, S., and A. Taylor, 1996, <em>Fair Division: From\nCake-Cutting to Dispute-Resolution</em>, Cambridge: Cambridge\nUniversity Press.</li>\n<li>Kyropoulou, M., J. Ortega, and E. Segal-Halevi, 2019, \u201cFair\nCake-Cutting in Practice\u201d, in <em>Proceedings of the 2019 ACM\nConference on Economics and Computation</em>, ACM Press, pp.\n547\u2013548. </li>\n<li>Moore, J., 1992, \u201cImplementation, Contracts, and\nRenegotiation in Environments with Complete Information\u201d, in\nJ.-J Laffont (ed.), <em>Advances in Economic Theory \u2014\n6<sup>th</sup> World Congress</em> (Volume 1), Cambridge: Cambridge\nUniversity Press.</li>\n<li>Padma, T., 2007, <em>Mathematwist: Number Tales from Around the\nWorld</em>, Chennai: Tulika Publishers.</li>\n<li>Parikh, R., 1983, \u201cPropositional Game Logic\u201d, in\n<em>24<sup>th</sup> Annual Symposium on Foundations of Computer\nScience</em>, Washington, DC: IEEE Computer Society, pp.\n195\u2013200.</li>\n<li>Pauly, M., 2005, \u201cChanging the Rules of Play\u201d,\n<em>Topoi</em>, 24(2): 209\u2013222.</li>\n<li>Robertson, J., and W. Webb, 1998, <em>Cake-Cutting Algorithms: Be\nFair If You Can</em>, Boca Raton, FL: A.K. Peters.</li>\n<li>Steinhaus, H., 1948, \u201cThe Problem of Fair Division\u201d,\n<em>Econometrica</em>, 16: 101\u2013104.</li>\n</ul>\n<h3><a id=\"StaMarProbib\">The Stable Marriage Problem</a></h3>\n<ul class=\"hanging\">\n<li>Gale, D., and L. Shapley, L., 1962, \u201cCollege Admissions and\nthe Stability of Marriage, <em>American Mathematical Monthly</em>, 69:\n9\u201315.</li>\n<li>Cechl\u00e9rov\u00e1, K., and D.F. Manlove, 2005, \u201cThe\nExchange-Stable Marriage Problem\u201d, <em>Discrete Applied\nMathematics</em>, 152(1\u20133): 109\u2013122.</li>\n<li>Parikh, R., and M. Pauly, 2012, \u201cWhat is Social\nSoftware?\u201d, in van Eijck and Verbrugge 2012: 3\u201314.</li>\n<li>Pini, M. S., F. Rossi, K.B. Venable, and T. Walsh, 2011,\n\u201cManipulation complexity and gender neutrality in stable\nmarriage procedures\u201d. <em>Autonomous Agents and Multi-Agent\nSystems</em>, 22(1): 183\u2013199.</li>\n</ul>\n<h3><a id=\"LogCombib\">The Logic of Communication</a></h3>\n<ul class=\"hanging\">\n<li>Bolander, T., and M.B. Andersen, 2011, \u201cEpistemic Planning\nfor Single-and Multi-Agent Systems\u201d, <em>Journal of Applied\nNon-Classical Logics</em>, 21(1): 9\u201334.</li>\n<li>Chwe, M. S.-Y., 2001, <em>Rational Ritual</em>, Princeton and\nOxford: Princeton University Press.</li>\n<li>van Ditmarsch, H., J. van Eijck, and R. Verbrugge, 2009,\n\u201cCommon Knowledge and Common Belief\u201d, in J. van Eijck and\nR. Verbrugge (eds.), <em>Discourses on Social Software</em>, (Texts in\nLogic and Games), Amsterdam: Amsterdam University Press, pp.\n99\u2013122.</li>\n<li>van Eijck, J., and R. Verbrugge, 2009, \u201cEating from the Tree\nof Ignorance\u201d, in J. van Eijck and R. Verbrugge (eds.),\n<em>Discourses on Social Software</em> (Texts in Logic and Games),\nAmsterdam: Amsterdam University Press, pp. 184\u2013198.</li>\n<li>Halpern, J., and Y. Moses, 1984, \u201cKnowledge and Common\nKnowledge in a Distributed Environment\u201d, in <em>Proceedings of\nthe 3rd ACM Symposium on Principles of Distributed Computing\n(PODS)</em>, pp. 50\u201361; revised, <em>Journal of the ACM</em>,\n37/3 (1990): 549\u2013587.</li>\n<li>Lewis, D., 1969, <em>Convention: A Philosophical Study</em>,\nCambridge, MA: Harvard University Press.</li>\n<li>L\u00f6we, B., E. Pacuit, and A. Witzel, 2011, \u201cDEL Planning\nand Some Tractable Cases\u201d, in Proceedings International Workshop\non Logic, Rationality and Interaction (LORI), Berlin, Heidelberg:\nSpringer, pp. 179\u2013192.</li>\n<li>Lynch, N., 1996, <em>Distributed Algorithms</em>, San Mateo, CA:\nMorgan Kaufmann.</li>\n<li>Nerburn, K., 1999, <em>The Wisdom of the Native Americans</em>,\nNovato, CA: New World Library.</li>\n<li>Wooldridge, M., 2002 [2009], <em>An Introduction to Multi-Agent\nSystems</em>, first edition, Chichester: John Wiley and Sons; second\nedition 2009.</li>\n</ul>\n<h3><a id=\"StrReaCoobib\">Strategic Reasoning and Cooperation</a></h3>\n<ul class=\"hanging\">\n<li>Axelrod, R., 1984, <em>The Evolution of Cooperation</em>, New\nYork: Basic Books.</li>\n<li>Benthem, J. van, S. Ghosh, and R. Verbrugge (eds.), 2015,\n<em>Models of Strategic Reasoning: Logics, Games, and Communities</em>\n(FoLLI Publications on Logic, Language and Information, LNCS 8972),\nBerlin: Springer.</li>\n<li>Benthem, J. van, E. Pacuit, and O. Roy, 2011, \u201cToward a\nTheory of Play: A Logical Perspective on Games and Interaction\u201d,\n<em>Games</em>, 2(1): 52\u201386.</li>\n<li>Bowles, S., and H. Gintis, 2011, <em>A Cooperative Species: Human\nReciprocity and its Evolution</em>, Princeton and Oxford: Princeton\nUniversity Press.</li>\n<li>Brandenburger, A., 2014, <em>The Language of Game Theory: Putting\nEpistemics into the Mathematics of Games</em>, Singapore: World\nScientific.</li>\n<li>Bulling, N., and V. Goranko, 2015, \u201cLogics for Reasoning\nAbout Strategic Abiliies in Multi-Player Games\u201d, in van Benthem,\nGhosh, &amp; Verbrugge 2015: 93\u2013136.</li>\n<li>Camerer, C.F., 2003, <em>Behavioral Game Theory: Experiments on\nStrategic Interaction</em>, Princeton: Princeton University\nPress.</li>\n<li>Chalkiadakis, G., E. Elkind, and M. Wooldridge, 2011,\n<em>Computational Aspects of Cooperative Game Theory</em> (Synthesis\nLectures on Artificial Intelligence and Machine Learning: Volume 5),\nSan Rafael, CA: Morgan and Claypool Publishers.</li>\n<li>Cin\u00e1, G., and U. Endriss, 2016, \u201cProving Classical\nTheorems of Social Choice Theory in Modal Logic\u201d, <em>Autonomous\nAgents and Multi-Agent Systems</em>, 30(5): 963\u2013989.</li>\n<li>Ditmarsch, H. van, J. Lang, and A. Saffidine, 2012,\n\u201cStrategic Voting and the Logic of Knowledge\u201d, in\n<em>Proceedings of the 11th International Conference on Autonomous\nAgents and Multiagent Systems (AAMAS\u201912)</em>, vol. 3, pp.\n1247\u20131248.</li>\n<li>Dunin-K\u0119plicz, B., and R. Verbrugge, 2010, <em>Teamwork in\nMulti-Agent Systems: A Formal Approach</em>, Chichester: Wiley.</li>\n<li>Eijck, J. van, 2015, \u201cStrategies in Social Software\u201d,\nin van Benthem, Ghosh, &amp; Verbrugge 2015: 292\u2013317.</li>\n<li>G\u00e4rdenfors, P., 2012, \u201cThe Cognitive and Communicative\nDemands of Cooperation\u201d, in van Eijck and Verbrugge 2012:\n164\u2013183.</li>\n<li>Ghosh, S., and R. Verbrugge, 2018, \u201cStudying Strategies and\nTypes of Players: Experiments, Logics and Cognitive Models\u201d,\n<em>Synthese</em>, 195(10): 4265\u20134307.</li>\n<li>Gr\u00e4del, E., W. Thomas, and T. Wilke (eds.), 2002,\n<em>Automata Logics, and Infinite Games</em>, (Lecture Notes in\nComputer Science 2500), Berlin, Heidelberg: Springer.</li>\n<li>Klein, D., and E. Pacuit, 2017, \u201cFocusing on\nCampaigns\u201d, in Ba\u015fkent, Moss, &amp; Ramanujam 2017, pp.\n77\u201390. </li>\n<li>Meijering, B., H. van Rijn, N. Taatgen, and R. Verbrugge,\n2012,\u201cWhat Eye Movements Can Tell about Theory of Mind in a\nStrategic Game\u201d, <em>PLoS ONE</em>, 7(9), e45961,\ndoi:10.1371/journal.pone.0045961</li>\n<li>Meijering, B., N. Taatgen, H. van Rijn, and R. Verbrugge, 2014,\n\u201cModeling Inference of Mental States: As Simple as Possible, as\nComplex as Necessary\u201c, <em>Interaction Studies</em>, 15(3):\n455\u2013477.</li>\n<li>Pacuit, E., 2015, \u201cStrategic Reasoning in Games\u201d, in\nvan Benthem, Ghosh, &amp; Verbrugge 2015: 3\u201333.</li>\n<li>Pauly, M., 2002, \u201cA Modal Logic for Coalitional Power in\nGames\u201d, <em>Journal of Logic and Computation</em>, 12:\n149\u2013166.</li>\n<li>Perea, A., 2012, <em> Epistemic Game Theory: Reasoning and\nChoice</em>, Cambridge: Cambridge University Press.</li>\n<li>Shoham, Y., and K. Leyton-Brown, 2009, <em>Multiagent Systems:\nAlgorithmic, Game-Theoretic and Logical Foundations</em>, Cambridge:\nCambridge University Press.</li>\n<li>Sigmund, K., 2010, <em>The Calculus of Selfishness</em>,\n(Princeton Series in Theoretical and Computational Biology), Princeton\nand Oxford: Princeton University Press.</li>\n<li>Top, J., R. Verbrugge, and S. Ghosh, 2018, \u201cAn Automated\nMethod for Building Cognitive Models for Turn-Based Games from a\nStrategy Logic\u201d, <em>Games</em>, 9(3),44;\ndoi:10.3390/g9030044</li>\n<li>Vazirani, V.V., N. Nisan, T. Roughgarden, and E. Tardos (eds.),\n2007, <em>Algorithmic Game Theory</em>, Cambridge: Cambridge\nUniversity Press.</li>\n<li>Von Neumann, J., and O. Morgenstern, 1944, <em>Theory of Games and\nEconomic Behavior</em>, Chichester: Wiley.</li>\n</ul>\n</div>"
+    },
+    "related_entries": {
+        "entry_list": [
+            "altruism: biological",
+            "Arrow\u2019s theorem",
+            "belief merging and judgment aggregation",
+            "common knowledge",
+            "computability and complexity",
+            "computing: and moral responsibility",
+            "economics [normative] and economic justice",
+            "epistemology: social",
+            "game theory",
+            "game theory: and ethics",
+            "game theory: epistemic foundations of",
+            "game theory: evolutionary",
+            "justice: transitional",
+            "logic: action",
+            "logic: epistemic",
+            "logic: for analyzing games",
+            "logic: paraconsistent",
+            "practical reason",
+            "prisoner\u2019s dilemma",
+            "privacy",
+            "redistribution",
+            "social choice theory",
+            "social institutions",
+            "social norms",
+            "technology, philosophy of",
+            "voting: methods"
+        ],
+        "entry_link": [
+            {
+                "../altruism-biological/": "altruism: biological"
+            },
+            {
+                "../arrows-theorem/": "Arrow\u2019s theorem"
+            },
+            {
+                "../belief-merging/": "belief merging and judgment aggregation"
+            },
+            {
+                "../common-knowledge/": "common knowledge"
+            },
+            {
+                "../computability/": "computability and complexity"
+            },
+            {
+                "../computing-responsibility/": "computing: and moral responsibility"
+            },
+            {
+                "../economic-justice/": "economics [normative] and economic justice"
+            },
+            {
+                "../epistemology-social/": "epistemology: social"
+            },
+            {
+                "../game-theory/": "game theory"
+            },
+            {
+                "../game-ethics/": "game theory: and ethics"
+            },
+            {
+                "../epistemic-game/": "game theory: epistemic foundations of"
+            },
+            {
+                "../game-evolutionary/": "game theory: evolutionary"
+            },
+            {
+                "../justice-transitional/": "justice: transitional"
+            },
+            {
+                "../logic-action/": "logic: action"
+            },
+            {
+                "../logic-epistemic/": "logic: epistemic"
+            },
+            {
+                "../logics-for-games/": "logic: for analyzing games"
+            },
+            {
+                "../logic-paraconsistent/": "logic: paraconsistent"
+            },
+            {
+                "../practical-reason/": "practical reason"
+            },
+            {
+                "../prisoner-dilemma/": "prisoner\u2019s dilemma"
+            },
+            {
+                "../privacy/": "privacy"
+            },
+            {
+                "../redistribution/": "redistribution"
+            },
+            {
+                "../social-choice/": "social choice theory"
+            },
+            {
+                "../social-institutions/": "social institutions"
+            },
+            {
+                "../social-norms/": "social norms"
+            },
+            {
+                "../technology/": "technology, philosophy of"
+            },
+            {
+                "../voting-methods/": "voting: methods"
+            }
+        ]
+    },
+    "academic_tools": {
+        "listed_text": [
+            "<img alt=\"sep man icon\" src=\"../../symbols/sepman-icon.jpg\"/>",
+            "<a href=\"https://plato.stanford.edu/cgi-bin/encyclopedia/archinfo.cgi?entry=social-procedures\" target=\"other\">How to cite this entry</a>.",
+            "<img alt=\"sep man icon\" src=\"../../symbols/sepman-icon.jpg\"/>",
+            "<a href=\"https://leibniz.stanford.edu/friends/preview/social-procedures/\" target=\"other\">Preview the PDF version of this entry</a> at the\n <a href=\"https://leibniz.stanford.edu/friends/\" target=\"other\">Friends of the SEP Society</a>.",
+            "<img alt=\"inpho icon\" src=\"../../symbols/inpho.png\"/>",
+            "<a href=\"https://www.inphoproject.org/entity?sep=social-procedures&amp;redirect=True\" target=\"other\">Look up topics and thinkers related to this entry</a>\n at the Internet Philosophy Ontology Project (InPhO).",
+            "<img alt=\"phil papers icon\" src=\"../../symbols/pp.gif\"/>",
+            "<a href=\"https://philpapers.org/sep/social-procedures/\" target=\"other\">Enhanced bibliography for this entry</a>\nat <a href=\"https://philpapers.org/\" target=\"other\">PhilPapers</a>, with links to its database."
+        ],
+        "listed_links": [
+            {
+                "https://plato.stanford.edu/cgi-bin/encyclopedia/archinfo.cgi?entry=social-procedures": "How to cite this entry"
+            },
+            {
+                "https://leibniz.stanford.edu/friends/preview/social-procedures/": "Preview the PDF version of this entry"
+            },
+            {
+                "https://leibniz.stanford.edu/friends/": "Friends of the SEP Society"
+            },
+            {
+                "https://www.inphoproject.org/entity?sep=social-procedures&redirect=True": "Look up topics and thinkers related to this entry"
+            },
+            {
+                "https://philpapers.org/sep/social-procedures/": "Enhanced bibliography for this entry"
+            },
+            {
+                "https://philpapers.org/": "PhilPapers"
+            }
+        ]
+    },
+    "other_internet_resources": {
+        "listed_text": [
+            "<a href=\"http://www.ifaamas.org/\" target=\"other\">AAMAS: Autonomous Agents and Multiagent Systems</a>.",
+            "<a href=\"http://www.tark.org/\" target=\"other\">TARK: Theoretical Aspects of Rationality and Knowledge</a>.",
+            "<a href=\"http://golori.org/\" target=\"other\">LORI: Workshops on Logic, Rationality, and Interaction</a>",
+            "<a href=\"http://www.econ.ucdavis.edu/faculty/bonanno/loft.html\" target=\"other\">LOFT: Logic and the Foundations of Game and Decision Theory</a>.",
+            "<a href=\"https://rinekeverbrugge.nl/teaching/\" target=\"other\">Games, Action and Social Software: ESSLLI 2009 Course by Jan van Eijck and Rineke Verbrugge</a>",
+            "<a href=\"http://ai.stanford.edu/~epacuit/lograt/nasslli2010.html\" target=\"other\">Logics of Rational Agency: NASSLLI 2010 course by Eric Pacuit</a>",
+            "<a href=\"https://www.youtube.com/watch?v=jGiAckY00ik\" target=\"other\"> A Discrete and Bounded Envy-Free Cake Cutting Protocol: Presentation by Haris Aziz and Simon Mackenzie</a>",
+            "<a href=\"https://www.zbw.eu/econis-archiv/bitstream/11159/389940/1/EBP07603903X_0.pdf\" target=\"other\">Preprint of the full version of the article on Fair Cake-Cutting in Practice by Kyropoulou et al., 2019</a>",
+            "<a href=\"http://mathsite.math.berkeley.edu/smp/smp.html\" target=\"other\">Interactive demo of the Gale-Shapley algorithm for stable matching</a>",
+            "<a href=\"http://vimeo.com/26173735\" target=\"other\">Movie of the token ring protocol</a>"
+        ],
+        "listed_links": [
+            {
+                "http://www.ifaamas.org/": "AAMAS: Autonomous Agents and Multiagent Systems"
+            },
+            {
+                "http://www.tark.org/": "TARK: Theoretical Aspects of Rationality and Knowledge"
+            },
+            {
+                "http://golori.org/": "LORI: Workshops on Logic, Rationality, and Interaction"
+            },
+            {
+                "http://www.econ.ucdavis.edu/faculty/bonanno/loft.html": "LOFT: Logic and the Foundations of Game and Decision Theory"
+            },
+            {
+                "https://rinekeverbrugge.nl/teaching/": "Games, Action and Social Software: ESSLLI 2009 Course by Jan van Eijck and Rineke Verbrugge"
+            },
+            {
+                "http://ai.stanford.edu/~epacuit/lograt/nasslli2010.html": "Logics of Rational Agency: NASSLLI 2010 course by Eric Pacuit"
+            },
+            {
+                "https://www.youtube.com/watch?v=jGiAckY00ik": " A Discrete and Bounded Envy-Free Cake Cutting Protocol: Presentation by Haris Aziz and Simon Mackenzie"
+            },
+            {
+                "https://www.zbw.eu/econis-archiv/bitstream/11159/389940/1/EBP07603903X_0.pdf": "Preprint of the full version of the article on Fair Cake-Cutting in Practice by Kyropoulou et al., 2019"
+            },
+            {
+                "http://mathsite.math.berkeley.edu/smp/smp.html": "Interactive demo of the Gale-Shapley algorithm for stable matching"
+            },
+            {
+                "http://vimeo.com/26173735": "Movie of the token ring protocol"
+            }
+        ]
+    }
+}

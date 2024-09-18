@@ -1,0 +1,31 @@
+{
+    "main_text": "Typed theories of truth\n3. Typed theories of truth\nIn typed theories of truth, only the truth of sentences not\ncontaining the same truth predicate is provable, thus avoiding the\nparadoxes by observing Tarski\u2019s distinction between object and\nmetalanguage.\n",
+    "section_title": "3. Typed theories of truth",
+    "entry_title": "Axiomatic Theories of Truth",
+    "hierarchy_title": "Axiomatic Theories of Truth || Typed theories of truth",
+    "tokenized_text": [
+        "typed",
+        "theory",
+        "truth",
+        "typed",
+        "theory",
+        "truth",
+        "typed",
+        "theory",
+        "truth",
+        "truth",
+        "sentence",
+        "containing",
+        "truth",
+        "predicate",
+        "provable",
+        "thus",
+        "avoiding",
+        "paradox",
+        "observing",
+        "tarski",
+        "distinction",
+        "object",
+        "metalanguage"
+    ]
+}

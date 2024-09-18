@@ -1,0 +1,28 @@
+{
+    "main_text": "\n\n\nThe topic of type theory is fundamental both in logic and computer\nscience. We limit ourselves here to sketch some aspects that are\nimportant in logic. For the importance of types in computer science, we\nrefer the reader for instance to Reynolds 1983 and 1985. \n",
+    "section_title": "Preamble",
+    "entry_title": "Type Theory",
+    "hierarchy_title": "Type Theory || Preamble",
+    "tokenized_text": [
+        "topic",
+        "type",
+        "theory",
+        "fundamental",
+        "logic",
+        "computer",
+        "science",
+        "limit",
+        "sketch",
+        "aspect",
+        "important",
+        "logic",
+        "importance",
+        "type",
+        "computer",
+        "science",
+        "refer",
+        "reader",
+        "instance",
+        "reynolds"
+    ]
+}

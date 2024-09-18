@@ -1,0 +1,30 @@
+{
+    "main_text": "\n\nInconsistent mathematics is the study of the mathematical theories\nthat result when classical mathematical axioms are asserted within the\nframework of a (non-classical) logic which can tolerate the presence\nof a contradiction without turning every sentence into a theorem.\n",
+    "section_title": "Preamble",
+    "entry_title": "Inconsistent Mathematics",
+    "hierarchy_title": "Inconsistent Mathematics || Preamble",
+    "tokenized_text": [
+        "inconsistent",
+        "mathematics",
+        "study",
+        "mathematical",
+        "theory",
+        "result",
+        "classical",
+        "mathematical",
+        "axiom",
+        "asserted",
+        "within",
+        "framework",
+        "nonclassical",
+        "logic",
+        "tolerate",
+        "presence",
+        "contradiction",
+        "without",
+        "turning",
+        "every",
+        "sentence",
+        "theorem"
+    ]
+}

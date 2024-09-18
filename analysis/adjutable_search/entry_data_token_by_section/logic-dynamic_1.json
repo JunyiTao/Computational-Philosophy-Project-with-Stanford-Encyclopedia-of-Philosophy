@@ -1,0 +1,33 @@
+{
+    "main_text": "Definitions and fundamental results\n2. Definitions and fundamental results\n\nWe present the syntax and semantics of PDL in\n section 2.1.\n The proof theory of PDL is presented in\n section 2.2\n with axiomatizations and pointers to the literature on completeness.\nWe address the problem of decidability and complexity in\n section 2.3.\n",
+    "section_title": "2. Definitions and fundamental results",
+    "entry_title": "Propositional Dynamic Logic",
+    "hierarchy_title": "Propositional Dynamic Logic || Definitions and fundamental results",
+    "tokenized_text": [
+        "definition",
+        "fundamental",
+        "result",
+        "definition",
+        "fundamental",
+        "result",
+        "present",
+        "syntax",
+        "semantics",
+        "pdl",
+        "section",
+        "proof",
+        "theory",
+        "pdl",
+        "presented",
+        "section",
+        "axiomatizations",
+        "pointer",
+        "literature",
+        "completeness",
+        "address",
+        "problem",
+        "decidability",
+        "complexity",
+        "section"
+    ]
+}

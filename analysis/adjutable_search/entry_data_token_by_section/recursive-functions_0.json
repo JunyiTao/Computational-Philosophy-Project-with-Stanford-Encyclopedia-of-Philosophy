@@ -1,0 +1,30 @@
+{
+    "main_text": "Historical Background\n1. Historical Background\n\nNB: This section assumes familiarity with some of the terminology\nintroduced in\n Section 2\n and\n Section 3.\n Readers looking for a technical overview of recursive functions or\ncomputability theory are advised to start there.\n",
+    "section_title": "1. Historical Background",
+    "entry_title": "Recursive Functions",
+    "hierarchy_title": "Recursive Functions || Historical Background",
+    "tokenized_text": [
+        "historical",
+        "background",
+        "historical",
+        "background",
+        "nb",
+        "section",
+        "assumes",
+        "familiarity",
+        "terminology",
+        "introduced",
+        "section",
+        "section",
+        "reader",
+        "looking",
+        "technical",
+        "overview",
+        "recursive",
+        "function",
+        "computability",
+        "theory",
+        "advised",
+        "start"
+    ]
+}

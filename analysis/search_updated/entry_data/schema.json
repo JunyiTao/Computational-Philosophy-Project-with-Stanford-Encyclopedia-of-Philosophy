@@ -1,0 +1,149 @@
+{
+    "url": "schema",
+    "title": "Schema",
+    "authorship": {
+        "year": "Copyright \u00a9 2016",
+        "author_text": "John Corcoran\n\nIdris Samawi Hamid\n<idris.hamid@colostate.edu>",
+        "author_links": [
+            {
+                "mailto:idris%2ehamid%40colostate%2eedu": "idris.hamid@colostate.edu"
+            }
+        ],
+        "raw_html": "<div id=\"article-copyright\">\n<p>\n<a href=\"../../info.html#c\">Copyright \u00a9 2016</a> by\n\n<br/>\nJohn Corcoran\n<br/>\nIdris Samawi Hamid\n&lt;<a href=\"mailto:idris%2ehamid%40colostate%2eedu\"><em>idris<abbr title=\" dot \">.</abbr>hamid<abbr title=\" at \">@</abbr>colostate<abbr title=\" dot \">.</abbr>edu</em></a>&gt;\n    </p>\n</div>"
+    },
+    "pubinfo": [
+        "First published Fri May 28, 2004",
+        "substantive revision Tue Aug 2, 2016"
+    ],
+    "preamble": "\n\nA schema (plural: schemata, or schemas),\nalso known as a scheme (plural: schemes), is a\nlinguistic \u201ctemplate\u201d, \u201cframe\u201d, or\n\u201cpattern\u201d together with a rule for using it to specify a\npotentially infinite multitude of phrases, sentences, or arguments,\nwhich are called instances of the schema. Schemas are used in\nlogic to specify rules of inference, in mathematics to describe\ntheories with infinitely many axioms, and in semantics to give\nadequacy conditions for definitions of truth.\n",
+    "toc": [
+        {
+            "#WhatSche": "1. What is a Schema?"
+        },
+        {
+            "#UsesSche": "2. Uses of Schemas"
+        },
+        {
+            "#OntoStatSche": "3. Ontological Status of Schemas"
+        },
+        {
+            "#ScheHistLogi": "4. Schemas in the History of Logic"
+        },
+        {
+            "#Bib": "Bibliography"
+        },
+        {
+            "#Aca": "Academic Tools"
+        },
+        {
+            "#Oth": "Other Internet Resources"
+        },
+        {
+            "#Rel": "Related Entries"
+        }
+    ],
+    "main_text": "\n1. What is a Schema?\n\nA schema is a complex system consisting of\n\na template-text or schema-template: a syntactic\nstring composed of significant words and/or symbols and also of\nplaceholders (letters, blanks, circled numbers, ellipses, ordinal\nnumber expressions like \u2018the first\u2019 and \u2018the\nsecond\u2019, etc.), and\na side condition specifying how the placeholders are to\nbe filled to obtain instances, and also, sometimes, how the\nsignificant words or symbols are to be understood (Tarski 1933/1983:\n155; Church 1956: 172). In particular, the side condition specifies\nthe language, whether natural or formal, to which the instances of the\nschema are to belong.\n\n\nAmong the best-known schemas is Tarski\u2019s schema T, whose\ntemplate-text is the eight-word two-ellipsis string:\n\n\u2026is a true sentence if and only if\u2026.\n\n\nThe side condition requires that the second blank is to be filled in\nwith a (declarative) sentence of English and the first blank is to be\nfilled in by a name of that sentence (Tarski 1933/1983: 155). The\nfollowing string is an instance: \n\n\u2018zero is one\u2019 is a true sentence if and only if zero is\none.\n\n\nMore revealing instances are obtained by using a sentence not known to\nbe true and not known to be false: \n\n\u2018every perfect number is even\u2019 is a true sentence if and\nonly if every perfect number is even.\n\n\nThe fourteen-word sentence\n\nEither zero is even or it is not the case that zero is even.\n\n\nis an instance of the excluded-middle sentence schema for\nEnglish, which involves the template \n\nEither \\(A\\) or it is not the case that \\(A\\).\n\n\nThe side condition is that the two occurrences of \u2018\\(A\\)\u2019\nare to be filled by occurrences of the same well-formed English\ndeclarative sentence, that the discontinuous expression \u2018Either\n\u2026 or \u2026 \u2019; expresses classical non-exclusive\ndisjunction, and that the six-word sentence-prefix \u2018it is not\nthe case that\u2019; expresses classical negation. Notice that this\nschema-template is not an English sentence. It would be strictly\nspeaking incoherent to use it as a sentence in an attempted\nassertion. It would also be wrong to call it true or false, though it\ncan be characterized as valid or invalid, in appropriate senses of\nthese ambiguous words. \n\nSome logicians seem to identify the schema with the template alone.\n(Tarski\u2019s wording at 1933/1983: 155\u20136 suggests this\nidentification, while Church\u2019s at 1956: 149 seems calculated to\navoid it.) But one and the same schema-template may be a component of\nany number of different schemata depending on the side condition or\nthe underlying language. Furthermore, since different characters or\nstrings can be used as placeholders (see above) and since even one\nnotational change produces a different syntactic string in the strict\nsense (Corcoran et al. 1974), one and the same set of instances may be\ndetermined by different schema-template/side-condition pairings even\ngiven a fixed language. It may be this fact that leads some authors to\nwrite as though the schema is to be identified with the set of\ninstances. For many purposes it is the set of specified instances that\nis of primary importance and the question of exactly what is involved\nin specifying it is considered a mere technicality.\n\nSometimes (as in the excluded-middle schema, above) the placeholders\nin a schema-template are marked by letters. It is important to keep in\nmind the distinction between, on one hand, an open sentence, such as\n\u2018\\((x + y) = (y + x)\\)\u2019; whose object-language numerical\nvariables \u2018\\(x\\)\u2019 and \u2018\\(y\\)\u2019 range over the\nnumbers and, on the other, a schema such as the number-theoretic\ncommutativity schema whose template-text is \u2018\\((X + Y) = (Y\n+ X)\\)\u2019; and whose side condition is that the two occurrences of\n\u2018\\(X\\)\u2019 are to be replaced by two occurrences of one and\nthe same numeral, and likewise for the two occurrences of\n\u2018\\(Y\\)\u2019. The numerals belong to the object language, while\nthe place-holders belong to the metalanguage. The variables in the\nobject-language range over a domain of objects, while the \u2018dummy\nletters\u2019 in the template-text are just placeholders for syntactic\nsubstituends. (For a careful exposition of the distinction, see Quine\n1945: sec. 1.)\n\nSchemas may be classed by the syntactic type of their instances as\nsentence schemas, subsentential schemas, or argument-text schemas. We\nhave already seen two examples of sentence schemas. The string\n\nthe successor of \\(A\\)\n\n\nis the template-text for a subsentential schema, where the\nside condition specifies that the letter \u2018\\(A\\)\u2019 be\nreplaced by an arabic numeral. The definite description \n\nthe successor of 9\n\n\nwould be an instance. Note that this schema is very different from the\nopen term \n\nthe successor of \\(x\\),\n\n\nwhere the \u2018\\(x\\)\u2019 is an object-language variable. The\nschema is essentially a recipe for generating syntactic instances. The\n\u2018dummy letter\u2019 \u2018\\(A\\)\u2019 in its template-text is\njust a placeholder for substituends (here, numerals). The\n\u2018\\(x\\)\u2019 in the open term, by contrast, is a variable\nranging over objects (here, numbers).\n\n\nAn argument-text schema is a schema whose instances are\nargument-texts. An argument-text is a two part system\ncomposed of a set of sentences called the premises and a single\nsentence called the conclusion. (An argument is that which is\nexpressed by an argument-text, as a proposition is that which is\nexpressed by a sentence.) Of the various ways of presenting an\nargument-text perhaps the one least open to misinterpretation is the\npremises-line-conclusion format which consists in listing the premises\nfollowed by a line followed by the conclusion. For example:\n\n\\[\n\\begin{align}\n&  \\textrm{Every circle is a polygon.}\\\\\n&  \\textrm{Every triangle is a circle.}\\\\\n& \\textrm{Every square is a triangle.}\\\\\\hline\n& \\textrm{Every square is a polygon.}\n\\end{align}\n\\]\n\n\nAn example of an argument-text schema is the inference rule modus\nponens: \n\n\\[\n\\begin{align}\n&  A\\\\\n& \\textrm{if } A \\textrm{ then }B\\\\\\hline\n&  B\n\\end{align}\n\\]\n\n\nThe side condition specifies that \u2018\\(A\\)\u2019 and\n\u2018\\(B\\)\u2019 be replaced with declarative sentences of English,\nand that both occurrences of \u2018\\(A\\)\u2019 (and likewise of\n\u2018\\(B\\)\u2019) be replaced by the same sentence or formula.\n\n\nAxiom schemas can be thought of as zero-premise argument-text\nschemas.\n2. Uses of Schemas\n\nSchemas are used in the formalization of logic, mathematics, and\nsemantics. In logic, they are used to specify the axioms and inference\nrules of a system. For example, one formalization of first-order logic\n(in Shapiro 1991: 65) states that\n\n\nAny formula obtained by substituting formulas for the Greek letters is\nan axiom: \n\n\\[ \\begin{align} \\Phi & \\rightarrow(\\Psi \\rightarrow \\Phi)\\\\ (\\Phi\n\\rightarrow(\\Psi \\rightarrow \\Xi)) & \\rightarrow((\\Phi \\rightarrow\n\\Psi) \\rightarrow(\\Phi \\rightarrow \\Xi))\\\\ (\\neg \\Phi \\rightarrow \\neg\n\\Psi) & \\rightarrow(\\Psi \\rightarrow \\Phi)\\\\ \\forall x\\Phi(x)\n& \\rightarrow \\Phi(t) \\end{align} \\]\n\n\nwhere \\(t\\) is a term free for \\(x\\) in \\(\\Phi\\),\n\n\nand that any inference of the form  \n\n\\[\n\\begin{align}\n& \\Phi\\\\\n& \\Phi \\rightarrow \\Psi\\\\\\hline\n& \\Psi\\\\\n\\end{align}\n\\]\n\n\nor (where \\(x\\) does not occur free in \\(\\Phi)\\)  \n\n\\[\n\\begin{align}\n \\Phi & \\rightarrow \\Psi(x)\\\\\\hline\n \\Phi & \\rightarrow \\forall x\\Psi(x),\n\\end{align}\n\\]\n\n\nis valid. \n\nSome mathematical theories can be finitely axiomatized in a\nfirst-order language, but certain historically important number\ntheories and set theories cannot. The axioms of these theories can\nsometimes be specified using schemata. For example, in first-order\nnumber theory the induction principle is specified using the\nschema \n\n\\[ [F(0) \\mathbin{\\&} \\forall x((\\textit{Num}(x) \\mathbin{\\&}\nF(x)) \\rightarrow F(sx)] \\rightarrow \\forall x(\\textit{Num}(x)\n\\rightarrow F(x)) \\]\n\n\nwhere the two blanks marked \u2018\\(F(x)\\)\u2019 are to be filled\nwith a first-order formula having one or more free occurrences of the\nvariable \u2018\\(x\\)\u2019, the blank marked \u2018\\(F(0)\\)\u2019\nis to be filled with the same formula after each free occurrence of\n\u2018\\(x\\)\u2019 has been replaced by an occurrence of\n\u20180\u2019, and the blank labeled \u2018\\(F(sx)\\)\u2019 is to\nbe filled with the same formula after each free occurrence of\n\u2018\\(x\\)\u2019 has been replaced by an occurrence of\n\u2018\\(sx\\)\u2019. \n\nFor example, if we fill the two blanks marked \u2018\\(F(x)\\)\u2019\nwith \u2018\\(x\\ne s x\\)\u2019, we have:  \n\n\\[ [ 0\\ne s0 \\mathbin{\\&} \\forall x ((\\textit{Num} (x)\n\\mathbin{\\&} x\\ne s x) \\rightarrow s x\\ne ss x)] \\rightarrow\n\\forall x (\\textit{Num} (x) \\rightarrow x\\ne s x) \\]\n\n\nUsing English as the underlying object language, the following\ntemplate-text could be used.\n\nIf zero is \\(F\\) and the successor of every number that is \\(F\\) is\nalso \\(F\\), then every number is \\(F\\), \n\nwhere the four occurrences of \u2018\\(F\\)\u2019 are to be filled in\nwith one and the same arithmetic predicate (e.g., \u2018smaller than\nsome prime\u2019). \n\nIn a second-order formalization of number theory, by contrast, a\nsingle induction axiom can be given: \n\n\n\\[ \\forall F \\{[F (0) \\mathbin{\\&} \\forall x ((\\textit{Num} (x)\n \\mathbin{\\&} F (x)) \\rightarrow F(sx)] \\rightarrow \\forall x\n (\\textit{Num} (x) \\rightarrow F(x))\\} \\]\n\n\nFor every \\(F\\), if zero is \\(F\\) and the successor of every number\nthat is \\(F\\) is also \\(F\\), then every number is \\(F\\).\n\n\nHere \u2018\\(F\\)\u2019 is not a placeholder in a schema, but a\ngenuine variable ranging over properties or classes (or, on some\ninterpretations, ranging plurally over individuals). For comparisons\nbetween first-order and second-order logic, see Corcoran 1998.\n\nThe orthographic similarities between the first-order induction schema\nand the second-order induction axiom have an unfortunate tendency to\nobscure the important differences between them. The latter is a\nsentence in the language, whereas the former is just a recipe for\ngenerating sentences. Nor are they inferentially equivalent: the set\nof instances of the first-order induction schema is logically weaker\nthan the second-order induction axiom. That is, there are sentences of\nfirst-order arithmetic that can be deduced from the second-order\ninduction axiom (together with the other axioms of arithmetic, which\nare common to first-order and second-order arithmetic) but not from\nthe instances of the first-order induction schema (see Shapiro 1991:\n110).\n\nSchemas have also played a prominent role in semantics. Tarski held\nthat an instance of his \u2018T-schema\u2019 (which he calls a\n\u2018scheme\u2019) could be regarded as a \u201cpartial definition\nof truth\u201d, or rather of \u201ctrue sentence\u201d:\n\n\nThe general scheme of this kind of sentence can be depicted in the\nfollowing way:\n\n(2) \\(x\\) is a true\nsentence if and only if \\(p\\).\n\n\nIn order to obtain concrete definitions we substitute in the place of\nthe symbol \u2018\\(p\\)\u2019 in this scheme any sentence, and in the\nplace of \u2018\\(x\\)\u2019 any individual name of this sentence.\n(Tarski 1933/1983: 155\u20136)\n\n\nHe took it to be a criterion of adequacy for a definition of\n\u2018true sentence\u2019 for a language that it have all such\n\u2018partial definitions\u2019 as consequences (Tarski 1933/1983:\n187\u20138). \n3. Ontological Status of Schemas\n\nIt is important to be clear about the mixed ontological status of\nschemas. The template-text of the schema is a syntactic object, a\nstring of characters, and has the same ontological presuppositions as\nnumerals, words, formulas, and the like. For example, the\ntemplate-text for the English naming schema\u2014\u2018The\nexpression \u2026 names the entity \u2026\u2019\u2014 is a\nforty-character expression involving twenty-seven letter-occurrences,\nsix occurrences of the space, and seven occurrences of the period. On\nthe other hand, the side condition is an intensional entity comparable\nto a proposition.\n\nA schema-template is a string type having indefinitely many tokens in\nPeirce\u2019s sense (Peirce 1906; Corcoran et al. 1974: 638 n. 5).\nBut none of the tokens of a schema-template are instances of the\nschema. In fact, every instance of a schema is a string type having\nits own tokens. The word \u2018instance\u2019 is a relation noun for\na relation certain string types bear to certain schemas. The word\n\u2018token\u2019 is a relation noun for a relation certain\nmacroscopic physical objects bear to certain abstract objects. Neither\na schema nor a schema-template is a common noun denoting the\ninstances, and neither is a proper name of a set of instances.\n\nSome philosophers emphasize the ontological economies possible by\nusing schemas rather than second-order axioms (e.g., Quine 1970/1986).\nBut rarely if ever do these philosophers present a full and objective\ndiscussion of the \u201contological commitments\u201d entailed by\nthe use of schemas. For example, number theory per se\npresupposes the existence of numbers, and perhaps numerical functions\nand numerical properties, but it does not presuppose the existence of\nmathematical notation and it a fortiori does not presuppose\nthe existence of the vast, intricate notational system that we call\nthe language of number theory. Sometimes the use of schemas may\ndecrease the ontological commitments of the object language while\nincreasing those of the metalanguage, or at least not achieving any\nnet savings.\n4. Schemas in the History of Logic\n\nThe Greek word \u2018schema\u2019; was used in Plato\u2019s Academy\nfor \u201c[geometric] figure\u201d and in Aristotle\u2019s Lyceum\nfor \u201c[syllogistic] figure\u201d. Although Aristotle\u2019s\nsyllogistic figures or \u201cschemata\u201d were not schemas in the\nmodern sense, Aristotle\u2019s moods were. For example, the\ntemplate-text of the mood BARBARA is \n\n\\[\n\\begin{align}\n& P \\textrm{ belongs-to-every }M.\\\\\n& M \\textrm{ belongs-to-every }S.\\\\\\hline\n& P \\textrm{ belongs-to-every }S.\n\\end{align}\n\\]\n\n\nThe associated side condition is that (1) both occurrences of\n\u2018\\(P\\)\u2019 are to be filled with occurrences of one and the\nsame common noun, (2) both occurrences of \u2018\\(M\\)\u2019 are to\nbe filled with occurrences of one and the same common noun other than\nthe one used for \u2018\\(P\\)\u2019, (3) both occurrences of\n\u2018\\(S\\)\u2019 are to be filled with occurrences of one and the\nsame common noun other than the ones used for \u2018\\(P\\)\u2019 and\n\u2018\\(M\\)\u2019, and that (4) the expression\n\u2018belongs-to-every\u2019 is taken to express universal\naffirmative predication as in the Prior analytics.  The rules\nof the Stoic propositional logic have been taken to be schemas.\n\nIt is hard to date self-conscious use of the word\n\u2018schema\u2019; in the modern sense. Russell\u2019s\nIntroduction to Mathematical Philosophy (1919) uses it\ncasually to describe propositional functions: \n\n\nA propositional function \u2026 may be taken to be a mere schema, a\nmere shell, an empty receptacle for meaning, not something already\nsignificant. (1919: 157) \n\n\nBut propositional functions are not syntactic schemas in the modern\nsense. Tarski\u2019s 1933 truth-definition paper (Tarski 1933/1983:\n157, 160, 172) was one of the first prominent publications to use the\nword \u2018scheme\u2019 in a sense close to that of this article\n(Tarski 1933/1983: 155, 156). Tarski also uses the word\n\u2018schema\u2019, and its plural \u2018schemata\u2019, in the\npre-World-War II period (1983: 63\u201364, 114, 310, 386, 423).\n\nEarly twentieth-century formalizations of logic used what were called\n\u201csubstitution rules\u201d with finite set of axioms instead of\nschemata that specified infinitely many axioms. These\n\u201csubstitution rules\u201d were not the familiar rules for\n\u201csubstituting equals for equals\u201d; rather they were closer\nto what are called instantiation rules today. The intuitive motivation\nfor \u201csubstitution rules\u201d was very simple but the syntactic\ndetails for implementing them were \u201cintolerably\ncomplex\u201d\u2014to use the words of Paul Rosenbloom (1950: 109).\nIn fact several first-rate logicians were led to make embarrassing\nerrors, as Rosenbloom documents in the place just cited. Church (1956:\n158) credits von Neumann with \u201cthe device of using axiom\nschemata\u201d, which rendered the (notoriously difficult to state)\nsubstitution rule unnecessary.\n\nAs Church has emphasized (e.g., 1956: 59), metamathematical treatment\nof schemas requires use of formalized or logically perfect languages\nand an axiomatized theory of strings as found for the first time in\nTarski\u2019s 1933 truth-definition paper (1933/1983: 152\u2013256).\nFor more on the history, philosophy, and mathematics of this important\nbut somewhat neglected field, see Corcoran et al. 1974;\nCorcoran 2006).\n",
+    "bibliography": {
+        "categories": [],
+        "cat_ref_text": {
+            "ref_list": [
+                "Church, A., 1956, <em>Introduction to Mathematical Logic</em>,\nPrinceton: Princeton University Press.",
+                "Corcoran, J., 1998, \u201cSecond-order Logic\u201d, in C.S.\nAnderson and M. Zeleny (eds.), <em>Logic, Meaning, and Computation:\nEssays in Memory of Alonzo Church</em>, Dordrecht: Kluwer.",
+                "\u2013\u2013\u2013, 2006, \u201cSchemata: the Concept of\nSchema in the History of Logic\u201d, <em>Bulletin of Symbolic\nLogic</em>, 12(2): 219\u201340. doi:10.2178/bsl/1146620060",
+                "\u2013\u2013\u2013, 2009, \u201cAristotle\u2019s\nDemonstrative Logic\u201d, <em>History and Philosophy of Logic</em>,\n30:1\u201320. doi:10.1080/01445340802228362",
+                "Corcoran, J., W. Frank, &amp; M. Maloney, 1974, \u201cString\ntheory\u201d, <em>Journal of Symbolic Logic</em>, 39(4):\n625\u2013637. doi:10.2307/2272846 ",
+                "Feferman, A. and S. Feferman, 2004, <em>Alfred Tarski: Life and\nLogic</em>, Cambridge: Cambridge University Press.",
+                "Feferman, S. and G. J\u00e4ger, 1983, \u201cChoice principles,\nthe bar rule and autonomously iterated comprehension schemes in\nanalysis\u201d, <em>Journal of Symbolic Logic</em>, 48:\n63\u201370.",
+                "Horsten, L., 2011, <em>The Tarskian Turn: Deflationism and\nAxiomatic Truth</em>, Cambridge, MA: MIT Press.",
+                "Kleene, S.C., 1967, <em>Mathematical Logic</em>, New York: Wiley\nand Sons; reprinted, New York: Dover, 2002.",
+                "Peirce, C., 1906, \u201cProlegomena to an Apology for\nPragmaticism\u201d, <em>Monist</em>, 16: 492\u2013546.",
+                "Quine, W. V., 1945, \u201cOn the Logic of Quantification\u201d,\n<em>Journal of Symbolic Logic</em>, 10: 1\u201312.",
+                "\u2013\u2013\u2013, 1970, <em>Philosophy of logic</em>,\nCambridge MA: Harvard University Press, reprinted 1983.",
+                "Rosenbloom, P., 1950. <em>Elements of Mathematical Logic</em>,\nDover, New York.",
+                "Russell, B., 1919, <em>Introduction to Mathematical\nPhilosophy</em>, London: George Allen and Unwin.",
+                "Shapiro, S., 1991, <em>Foundations without Foundationalism: A Case\nfor Second-order Logic</em>, Oxford: Oxford University Press.",
+                "Tarski, A., 1933, \u201cThe concept of truth in the languages of\nthe deductive sciences\u201d (Polish), <em>Prace Towarzystwa\nNaukowego Warszawskiego, Wydzial III Nauk\nMatematyczno-Fizycznych</em>, 34, Warsaw; reprinted in Zygmunt 1995:\n13\u2013172; expanded English translation in Tarski 1983:\n152\u2013278.",
+                "\u2013\u2013\u2013, 1983, <em>Logic, Semantics,\nMetamathematics: Papers from 1923 to 1938</em>, edited with\nintroduction and analytic index by John Corcoran, Indianapolis:\nHackett Publishing Company.",
+                "van Heijenoort, J., 1967, <em>From Frege to G\u00f6del</em>,\nCambridge MA: Harvard University Press.",
+                "Zygmunt, J. (ed.), 1995, <em>Alfred Tarski, Pisma\nLogiczno-Filozoficzne, 1 Prawda</em>, Warsaw: Wydawnictwo Naukowe\nPWN."
+            ]
+        },
+        "raw_text": "<div id=\"bibliography\">\n<h2 id=\"Bib\">Bibliography</h2>\n<ul class=\"hanging\">\n<li>Church, A., 1956, <em>Introduction to Mathematical Logic</em>,\nPrinceton: Princeton University Press.</li>\n<li>Corcoran, J., 1998, \u201cSecond-order Logic\u201d, in C.S.\nAnderson and M. Zeleny (eds.), <em>Logic, Meaning, and Computation:\nEssays in Memory of Alonzo Church</em>, Dordrecht: Kluwer.</li>\n<li>\u2013\u2013\u2013, 2006, \u201cSchemata: the Concept of\nSchema in the History of Logic\u201d, <em>Bulletin of Symbolic\nLogic</em>, 12(2): 219\u201340. doi:10.2178/bsl/1146620060</li>\n<li>\u2013\u2013\u2013, 2009, \u201cAristotle\u2019s\nDemonstrative Logic\u201d, <em>History and Philosophy of Logic</em>,\n30:1\u201320. doi:10.1080/01445340802228362</li>\n<li>Corcoran, J., W. Frank, &amp; M. Maloney, 1974, \u201cString\ntheory\u201d, <em>Journal of Symbolic Logic</em>, 39(4):\n625\u2013637. doi:10.2307/2272846 </li>\n<li>Feferman, A. and S. Feferman, 2004, <em>Alfred Tarski: Life and\nLogic</em>, Cambridge: Cambridge University Press.</li>\n<li>Feferman, S. and G. J\u00e4ger, 1983, \u201cChoice principles,\nthe bar rule and autonomously iterated comprehension schemes in\nanalysis\u201d, <em>Journal of Symbolic Logic</em>, 48:\n63\u201370.</li>\n<li>Horsten, L., 2011, <em>The Tarskian Turn: Deflationism and\nAxiomatic Truth</em>, Cambridge, MA: MIT Press.</li>\n<li>Kleene, S.C., 1967, <em>Mathematical Logic</em>, New York: Wiley\nand Sons; reprinted, New York: Dover, 2002.</li>\n<li>Peirce, C., 1906, \u201cProlegomena to an Apology for\nPragmaticism\u201d, <em>Monist</em>, 16: 492\u2013546.</li>\n<li>Quine, W. V., 1945, \u201cOn the Logic of Quantification\u201d,\n<em>Journal of Symbolic Logic</em>, 10: 1\u201312.</li>\n<li>\u2013\u2013\u2013, 1970, <em>Philosophy of logic</em>,\nCambridge MA: Harvard University Press, reprinted 1983.</li>\n<li>Rosenbloom, P., 1950. <em>Elements of Mathematical Logic</em>,\nDover, New York.</li>\n<li>Russell, B., 1919, <em>Introduction to Mathematical\nPhilosophy</em>, London: George Allen and Unwin.</li>\n<li>Shapiro, S., 1991, <em>Foundations without Foundationalism: A Case\nfor Second-order Logic</em>, Oxford: Oxford University Press.</li>\n<li>Tarski, A., 1933, \u201cThe concept of truth in the languages of\nthe deductive sciences\u201d (Polish), <em>Prace Towarzystwa\nNaukowego Warszawskiego, Wydzial III Nauk\nMatematyczno-Fizycznych</em>, 34, Warsaw; reprinted in Zygmunt 1995:\n13\u2013172; expanded English translation in Tarski 1983:\n152\u2013278.</li>\n<li>\u2013\u2013\u2013, 1983, <em>Logic, Semantics,\nMetamathematics: Papers from 1923 to 1938</em>, edited with\nintroduction and analytic index by John Corcoran, Indianapolis:\nHackett Publishing Company.</li>\n<li>van Heijenoort, J., 1967, <em>From Frege to G\u00f6del</em>,\nCambridge MA: Harvard University Press.</li>\n<li>Zygmunt, J. (ed.), 1995, <em>Alfred Tarski, Pisma\nLogiczno-Filozoficzne, 1 Prawda</em>, Warsaw: Wydawnictwo Naukowe\nPWN.</li>\n</ul>\n</div>"
+    },
+    "related_entries": {
+        "entry_list": [
+            "argument and argumentation",
+            "Aristotle, General Topics: logic",
+            "logical constants",
+            "ontological commitment",
+            "Quine, Willard Van Orman",
+            "Russell, Bertrand",
+            "Tarski, Alfred"
+        ],
+        "entry_link": [
+            {
+                "../argument/": "argument and argumentation"
+            },
+            {
+                "../aristotle-logic/": "Aristotle, General Topics: logic"
+            },
+            {
+                "../logical-constants/": "logical constants"
+            },
+            {
+                "../ontological-commitment/": "ontological commitment"
+            },
+            {
+                "../quine/": "Quine, Willard Van Orman"
+            },
+            {
+                "../russell/": "Russell, Bertrand"
+            },
+            {
+                "../tarski/": "Tarski, Alfred"
+            }
+        ]
+    },
+    "academic_tools": {
+        "listed_text": [
+            "<td valign=\"top\"><img alt=\"sep man icon\" src=\"../../symbols/sepman-icon.jpg\"/>",
+            "<a href=\"https://plato.stanford.edu/cgi-bin/encyclopedia/archinfo.cgi?entry=schema\" target=\"other\">How to cite this entry</a>.",
+            "<td valign=\"top\"><img alt=\"sep man icon\" src=\"../../symbols/sepman-icon.jpg\"/>",
+            "<a href=\"https://leibniz.stanford.edu/friends/preview/schema/\" target=\"other\">Preview the PDF version of this entry</a> at the\n <a href=\"https://leibniz.stanford.edu/friends/\" target=\"other\">Friends of the SEP Society</a>.",
+            "<td valign=\"top\"><img alt=\"inpho icon\" src=\"../../symbols/inpho.png\"/>",
+            "<a href=\"https://www.inphoproject.org/entity?sep=schema&amp;redirect=True\" target=\"other\">Look up topics and thinkers related to this entry</a>\n at the Internet Philosophy Ontology Project (InPhO).",
+            "<td valign=\"top\"><img alt=\"phil papers icon\" src=\"../../symbols/pp.gif\"/>",
+            "<a href=\"http://philpapers.org/sep/schema/\" target=\"other\">Enhanced bibliography for this entry</a>\nat <a href=\"http://philpapers.org/\" target=\"other\">PhilPapers</a>, with links to its database."
+        ],
+        "listed_links": [
+            {
+                "https://plato.stanford.edu/cgi-bin/encyclopedia/archinfo.cgi?entry=schema": "How to cite this entry"
+            },
+            {
+                "https://leibniz.stanford.edu/friends/preview/schema/": "Preview the PDF version of this entry"
+            },
+            {
+                "https://leibniz.stanford.edu/friends/": "Friends of the SEP Society"
+            },
+            {
+                "https://www.inphoproject.org/entity?sep=schema&redirect=True": "Look up topics and thinkers related to this entry"
+            },
+            {
+                "http://philpapers.org/sep/schema/": "Enhanced bibliography for this entry"
+            },
+            {
+                "http://philpapers.org/": "PhilPapers"
+            }
+        ]
+    },
+    "other_internet_resources": {
+        "listed_text": [
+            "<a href=\"http://mathworld.wolfram.com/AxiomSchema.html\" target=\"other\">Axiom Schema</a>,\n at mathworld.wolfram.com."
+        ],
+        "listed_links": [
+            {
+                "http://mathworld.wolfram.com/AxiomSchema.html": "Axiom Schema"
+            }
+        ]
+    }
+}
